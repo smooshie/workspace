@@ -2,12 +2,26 @@
 -- START DISKCACHE
 /home/lisagawr/workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Work/com.python.pydev.analysis/v1_indexcache
 .v1_indexcache
+findMask|0|/home/lisagawr/workspace/Work/findMask.py
+findMate|0|/home/lisagawr/workspace/Work/findMate.py
+createInversion|0|/home/lisagawr/workspace/Work/createInversion.py
 -- END DISKCACHE
 -- START DICTIONARY
-0
+3
+3=findMask
+1=findMate
+2=createInversion
 -- END DICTIONARY
 -- START TREE 1
-0
+8
+com|1|comparable!11@
+mai|1|main!18@
+map|1|mappedparts!11@
+mat|1|mateparts!11@
+rc|1|rc!18@
+res|0|
+seq|1|sequence!27@
+wri|1|writeto!11@
 -- END TREE
 -- START TREE 2
 0

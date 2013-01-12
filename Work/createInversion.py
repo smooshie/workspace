@@ -1,7 +1,15 @@
 '''
 Created on 11.1.2013
 
-@author: lisagawr
+@author: 
+
+            ::.
+      (\./)  .-""-.
+       `\'-'`      \
+         '.___,_^__/
+
+     * Whale whale whale, what have we here?
+
 '''
 
 def rc(input):

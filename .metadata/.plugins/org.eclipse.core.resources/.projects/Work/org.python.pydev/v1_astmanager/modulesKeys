@@ -1,3 +1,8 @@
 MODULES_MANAGER_V2
+coveragePeaks|/home/lisagawr/workspace/Work/coveragePeaks.py
+createInversion|/home/lisagawr/workspace/Work/createInversion.py
 findMask|/home/lisagawr/workspace/Work/findMask.py
 findMate|/home/lisagawr/workspace/Work/findMate.py
+findUnmapped|/home/lisagawr/workspace/Work/findUnmapped.py
+reverseReads|/home/lisagawr/workspace/Work/reverseReads.py
+whale|/home/lisagawr/workspace/Work/whale.py

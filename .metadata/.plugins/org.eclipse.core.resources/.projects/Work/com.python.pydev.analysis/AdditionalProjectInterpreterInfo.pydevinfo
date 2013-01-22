@@ -5,30 +5,38 @@
 findMask|0|/home/lisagawr/workspace/Work/findMask.py
 findMate|0|/home/lisagawr/workspace/Work/findMate.py
 coveragePeaks|0|/home/lisagawr/workspace/Work/coveragePeaks.py
-reverseReads|0|/home/lisagawr/workspace/Work/reverseReads.py
+readReads1|0|/home/lisagawr/workspace/Work/readReads1.py
 createInversion|0|/home/lisagawr/workspace/Work/createInversion.py
+whale|0|/home/lisagawr/workspace/Work/whale.py
 findUnmapped|0|/home/lisagawr/workspace/Work/findUnmapped.py
 -- END DISKCACHE
 -- START DICTIONARY
-5
-5=findMask
+6
+6=findMask
 2=coveragePeaks
 1=findMate
-3=reverseReads
+5=readReads1
 4=createInversion
+3=whale
 -- END DICTIONARY
 -- START TREE 1
-11
+17
+!<m|0|
 com|1|comparable!11@
 cov|1|coverage!19@
 dep|1|depth!19@
+fou|0|
+las|0|
+lin|0|
 loc|1|location!19@
 mai|2|main!26@main!34@
 map|1|mappedparts!11@
 mat|1|mateparts!11@
 par|1|part!19@
-rc|2|rc!26@rc!34@
-seq|1|sequence!43@
+rc|2|rc!34@rc!26@
+rea|1|reads1!43@
+rev|0|
+seq|1|sequence!51@
 wri|1|writeto!11@
 -- END TREE
 -- START TREE 2

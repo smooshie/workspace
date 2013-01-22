@@ -6,14 +6,14 @@ Created on 11.1.2013
 
 def rc(reversable):
     complement = { "A" : "T", "T" : "A", "C" : "G", "G" : "C"}
-    result = [] 
+    result = "" 
     for i in reversed(reversable): 
-        result.append(complement[i])
+        result += complement[i]
     
-    return ''.join(result)
+    return result
 
 def main():
-    sequence = '''GGATTACAGGTGTGAGCCACTGCGCCTGGCCTGTTGAACTTTTAACATACTTCCCTGTGCTCTAGCCACAGCCACACTGGTTCCCGTTAGCTAAATTTTTAACCATACAGTATTGTCATTTGCATGCTGTAGTTAAGAGCTTCCAGAGGTTACATGCACTAGATCTTAACAGCTTAGCCCTCATGAATAACATGTTATCTTCCACCATCTCAGGGAAGCAGTGATACCGTGGAGTGAGAAAAGTGCATTCTCTCAGGATTTCTGCCGTGTTTTCATGCTGAGGTGTGACAGAGTATTTCC'''
+    sequence = "CAGGAC"
     reversd = rc(sequence)
     print reversd
                     

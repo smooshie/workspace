@@ -5,7 +5,7 @@ Created on 10.1.2013
 '''
 comparable = {}
 
-with open('matesw.sam', 'r') as matesw:
+with open('paired_unmapped.sam', 'r') as matesw:
     for line in matesw:
         mateparts = line.split()
         comparable[mateparts[0]] = 1

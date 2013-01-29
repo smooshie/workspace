@@ -13,7 +13,7 @@ def rc(reversable):
     return result
 
 def main():
-    sequence = "CAGGAC"
+    sequence = "GGAGGCGCTGGGTATGGTGGCTCACTCCTGTAATCCCAGCACTTTGGGAGGCCAAGGAGG"    
     reversd = rc(sequence)
     print reversd
                     

@@ -86,6 +86,7 @@ def main():
     reads.close()
     
     singleFlags = {}
+    open('unmapped_singles_reversed.fq', "w").close() #to make sure output file is empty
     singl_reads = open('unmapped_singles_reversed.fq', "w")
 
     with open('singles_unmapped.sam', 'r') as singles:

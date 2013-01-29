@@ -4,5 +4,8 @@ createInversion|/home/lisagawr/workspace/Work/createInversion.py
 findMask|/home/lisagawr/workspace/Work/findMask.py
 findMate|/home/lisagawr/workspace/Work/findMate.py
 findUnmapped|/home/lisagawr/workspace/Work/findUnmapped.py
+locationOf|/home/lisagawr/workspace/Work/locationOf.py
+peaks|/home/lisagawr/workspace/Work/peaks.py
+readReads1|/home/lisagawr/workspace/Work/readReads1.py
 reverseReads|/home/lisagawr/workspace/Work/reverseReads.py
 whale|/home/lisagawr/workspace/Work/whale.py

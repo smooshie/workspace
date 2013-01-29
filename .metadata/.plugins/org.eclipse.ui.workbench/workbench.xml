@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="33" version="2.0">
+<workbench progressCount="30" version="2.0">
 <workbenchAdvisor/>
-<window height="1027" width="1492" x="119" y="127">
+<window height="1124" width="1084" x="702" y="137">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -39,13 +39,19 @@
 <part id="8"/>
 <part id="9"/>
 <part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.python.pydev.editor.PythonEditor" name="findMate.py" partName="findMate" path="/home/lisagawr/workspace/Work/findMate.py" title="findMate" tooltip="Work/findMate.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/findMate.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="175" selectionOffset="65" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="400" selectionOffset="48" selectionTopPixel="0"/>
 </editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="findMask.py" partName="findMask" path="/home/lisagawr/workspace/Work/findMask.py" title="findMask" tooltip="Work/findMask.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/findMask.py"/>
@@ -57,11 +63,11 @@
 </editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="createInversion.py" partName="createInversion" path="/home/lisagawr/workspace/Work/createInversion.py" title="createInversion" tooltip="Work/createInversion.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/createInversion.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="632" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="339" selectionTopPixel="0"/>
 </editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="coveragePeaks.py" partName="coveragePeaks" path="/home/lisagawr/workspace/Work/coveragePeaks.py" title="coveragePeaks" tooltip="Work/coveragePeaks.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/coveragePeaks.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="189" selectionOffset="376" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="62" selectionTopPixel="635"/>
 </editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="peakdet.py" partName="peakdet (PeakFinding)" title="peakdet (PeakFinding)" tooltip="/home/lisagawr/workspace/PeakFinding/peakdet.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/lisagawr/workspace/PeakFinding/peakdet.py"/>
@@ -75,9 +81,9 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/findUnmapped.py"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="48" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="reverseReads.py" partName="reverseReads" path="/home/lisagawr/workspace/Work/reverseReads.py" title="reverseReads" tooltip="Work/reverseReads.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<editor id="org.python.pydev.editor.PythonEditor" name="reverseReads.py" partName="reverseReads" path="/home/lisagawr/workspace/Work/reverseReads.py" title="reverseReads" tooltip="Work/reverseReads.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/reverseReads.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="552" selectionTopPixel="85"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2426" selectionTopPixel="1513"/>
 </editor>
 <editor id="org.eclipse.ui.DefaultTextEditor" name="try.fq" partName="try.fq" path="/home/lisagawr/workspace/Work/try.fq" title="try.fq" tooltip="Work/try.fq" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/try.fq"/>
@@ -85,7 +91,31 @@
 </editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="whale.py" partName="whale" path="/home/lisagawr/workspace/Work/whale.py" title="whale" tooltip="Work/whale.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/whale.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="772" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="261" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="batman_reads.fq" partName="batman_reads.fq" path="/home/lisagawr/workspace/Work/batman_reads.fq" title="batman_reads.fq" tooltip="Work/batman_reads.fq" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/batman_reads.fq"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="readReads1.py" partName="readReads1" path="/home/lisagawr/workspace/Work/readReads1.py" title="readReads1" tooltip="Work/readReads1.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/readReads1.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="104" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="reads1.fq" partName="reads1.fq" path="/home/lisagawr/workspace/Work/reads1.fq" title="reads1.fq" tooltip="Work/reads1.fq" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/reads1.fq"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="locationOf.py" partName="locationOf" path="/home/lisagawr/workspace/Work/locationOf.py" title="locationOf" tooltip="Work/locationOf.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/locationOf.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="447" selectionOffset="49" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="peaks.py" partName="peaks" path="/home/lisagawr/workspace/Work/peaks.py" title="peaks" tooltip="Work/peaks.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/peaks.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="474" selectionTopPixel="203"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="coverages_unmapped.sam" partName="coverages_unmapped.sam" path="/home/lisagawr/workspace/Work/coverages_unmapped.sam" title="coverages_unmapped.sam" tooltip="Work/coverages_unmapped.sam" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/coverages_unmapped.sam"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2077" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -95,7 +125,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (2 items)"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="202" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -126,7 +156,7 @@
 <view id="org.python.pydev.navigator.view" partName="PyDev Package Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
 <expanded IMemento.internal.id="/home/lisagawr/workspace/Work"/>
-<selected IMemento.internal.id="/home/lisagawr/workspace/Work/reverseReads.py"/>
+<selected IMemento.internal.id="/home/lisagawr/workspace/Work/human_long_inverted.fas"/>
 </viewState>
 </view>
 </views>
@@ -226,17 +256,30 @@
 <new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.python.pydev.navigator.view"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<fastViewBars/>
+<fastViewBars>
+<fastViewBar fastViewLocation="16384" id="topLeft" orientation="512" selectedTabId="org.python.pydev.navigator.view" style="0">
+<fastViews>
+<view id="org.python.pydev.navigator.view" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
-<folder activePageID="org.python.pydev.navigator.view" appearance="2" expanded="2">
-<page content="org.python.pydev.navigator.view" label="PyDev Package Explorer"/>
+<folder appearance="2" expanded="2">
+<page content="org.python.pydev.navigator.view" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7a6b43c1" ratio="0.75" ratioLeft="675" ratioRight="225" relationship="4" relative="topLeft">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
@@ -249,16 +292,11 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25995126" ratioLeft="320" ratioRight="911" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.7497303" ratioLeft="695" ratioRight="232" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@7383ab7d" ratio="0.76714283" ratioLeft="537" ratioRight="163" relationship="2" relative="org.eclipse.ui.editorss">
@@ -274,176 +312,172 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/coveragePeaks.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/PeakFinding/peakdet.py"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" uri="file:/home/lisagawr/workspace/PeakFinding/peakdet.py"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" uri="file:/home/lisagawr/workspace/PeakFinding/mate_depth"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/findMate.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/peaks/peakdetect.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/coveragePeaks.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/peaks/peakdetect.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/peaks/peakdet.py"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" uri="file:/home/lisagawr/workspace/PeakFinding/peakdet.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/findMate.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/findUnmapped.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/reverseReads.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/createInversion.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/findMask.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/coveragePeaks.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Work/try.fq"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Work/try.fq"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/findMask.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Work/batman_reads.fq"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/readReads1.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Work/reads1.fq"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/findMate.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/createInversion.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/whale.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/reverseReads.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/locationOf.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/findMate.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/coveragePeaks.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/createInversion.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/peaks.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/whale.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Work/reads1.fq"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Work/coverages_unmapped.sam"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/coveragePeaks.py"/>
 </editors>
-<item historyLabel="peakdet" index="1">
-<position info="not_deleted" x="1369" y="0"/>
+<item historyLabel="batman_reads.fq" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="coveragePeaks" index="0">
-<position info="not_deleted" x="329" y="23"/>
+<item historyLabel="reverseReads" index="0">
+<position/>
 </item>
-<item historyLabel="peakdet" index="2">
-<position info="not_deleted" x="508" y="0"/>
+<item historyLabel="batman_reads.fq" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="mate_depth" index="3"/>
+<item historyLabel="batman_reads.fq" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="reverseReads" index="0">
+<position/>
+</item>
+<item historyLabel="reads1.fq" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="reverseReads" index="0">
+<position/>
+</item>
+<item historyLabel="batman_reads.fq" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="batman_reads.fq" index="1">
+<position/>
+</item>
+<item historyLabel="reverseReads" index="0">
+<position/>
+</item>
+<item historyLabel="batman_reads.fq" index="1">
+<position info="not_deleted" x="7166" y="0"/>
+</item>
+<item historyLabel="reverseReads" index="0">
+<position/>
+</item>
+<item historyLabel="batman_reads.fq" index="1">
+<position info="not_deleted" x="7166" y="0"/>
+</item>
+<item historyLabel="readReads1" index="2">
+<position info="not_deleted" x="104" y="0"/>
+</item>
+<item historyLabel="batman_reads.fq" index="1">
+<position/>
+</item>
+<item historyLabel="readReads1" index="2">
+<position info="not_deleted" x="104" y="0"/>
+</item>
+<item historyLabel="reverseReads" index="0">
+<position info="not_deleted" x="1473" y="0"/>
+</item>
+<item historyLabel="batman_reads.fq" index="1">
+<position info="not_deleted" x="7166" y="0"/>
+</item>
+<item historyLabel="reverseReads" index="0">
+<position info="not_deleted" x="1635" y="0"/>
+</item>
+<item historyLabel="batman_reads.fq" index="1">
+<position info="not_deleted" x="7166" y="0"/>
+</item>
+<item historyLabel="reverseReads" index="0">
+<position/>
+</item>
+<item historyLabel="batman_reads.fq" index="1">
+<position/>
+</item>
+<item historyLabel="reverseReads" index="0">
+<position/>
+</item>
+<item historyLabel="batman_reads.fq" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="reverseReads" index="0">
+<position/>
+</item>
 <item historyLabel="findMate" index="4">
-<position info="not_deleted" x="439" y="0"/>
+<position info="not_deleted" x="448" y="0"/>
 </item>
-<item historyLabel="peakdetect" index="5">
+<item historyLabel="reverseReads" index="0">
+<position info="not_deleted" x="389" y="0"/>
+</item>
+<item historyLabel="findMate" index="4">
+<position info="not_deleted" x="92" y="0"/>
+</item>
+<item historyLabel="reverseReads" index="0">
+<position info="not_deleted" x="389" y="0"/>
+</item>
+<item historyLabel="createInversion" index="5">
+<position info="not_deleted" x="49" y="191"/>
+</item>
+<item historyLabel="readReads1" index="2">
+<position info="not_deleted" x="104" y="0"/>
+</item>
+<item historyLabel="reverseReads" index="0">
+<position/>
+</item>
+<item historyLabel="whale" index="6">
+<position info="not_deleted" x="26" y="140"/>
+</item>
+<item historyLabel="reverseReads" index="0">
+<position info="not_deleted" x="389" y="0"/>
+</item>
+<item historyLabel="locationOf" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="coveragePeaks" index="6">
-<position info="not_deleted" x="348" y="0"/>
+<item historyLabel="findMate" index="8">
+<position info="not_deleted" x="48" y="400"/>
 </item>
-<item historyLabel="coveragePeaks" index="6">
-<position info="not_deleted" x="682" y="0"/>
+<item historyLabel="locationOf" index="7">
+<position info="not_deleted" x="496" y="0"/>
 </item>
-<item historyLabel="coveragePeaks" index="6">
-<position info="not_deleted" x="512" y="0"/>
-</item>
-<item historyLabel="peakdetect" index="7">
-<position/>
-</item>
-<item historyLabel="coveragePeaks" index="6">
-<position info="not_deleted" x="129" y="0"/>
-</item>
-<item historyLabel="peakdetect" index="7">
-<position/>
-</item>
-<item historyLabel="coveragePeaks" index="6">
-<position info="not_deleted" x="340" y="0"/>
-</item>
-<item historyLabel="peakdetect" index="7">
-<position/>
-</item>
-<item historyLabel="coveragePeaks" index="6">
-<position info="not_deleted" x="565" y="0"/>
-</item>
-<item historyLabel="peakdetect" index="7">
-<position/>
-</item>
-<item historyLabel="peakdet (peaks)" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="peakdet (PeakFinding)" index="9">
-<position info="not_deleted" x="508" y="0"/>
-</item>
-<item historyLabel="peakdetect" index="7">
-<position/>
-</item>
-<item historyLabel="peakdet (peaks)" index="8">
-<position info="not_deleted" x="1880" y="0"/>
-</item>
-<item historyLabel="peakdet (peaks)" index="8">
-<position info="not_deleted" x="2308" y="0"/>
-</item>
-<item historyLabel="peakdet (peaks)" index="8">
-<position info="not_deleted" x="1795" y="1"/>
-</item>
-<item historyLabel="coveragePeaks" index="6">
-<position info="not_deleted" x="565" y="0"/>
-</item>
-<item historyLabel="peakdetect" index="7">
-<position info="not_deleted" x="9993" y="0"/>
-</item>
-<item historyLabel="coveragePeaks" index="6">
+<item historyLabel="coveragePeaks" index="9">
 <position info="not_deleted" x="376" y="189"/>
 </item>
-<item historyLabel="peakdet (peaks)" index="8">
-<position info="not_deleted" x="10046" y="0"/>
+<item historyLabel="createInversion" index="10">
+<position info="not_deleted" x="49" y="191"/>
 </item>
-<item historyLabel="findMate" index="10">
-<position info="not_deleted" x="439" y="0"/>
+<item historyLabel="peaks" index="11">
+<position info="not_deleted" x="603" y="0"/>
 </item>
-<item historyLabel="findUnmapped" index="11">
-<position info="not_deleted" x="48" y="0"/>
+<item historyLabel="whale" index="12">
+<position info="not_deleted" x="261" y="0"/>
 </item>
-<item historyLabel="reverseReads" index="12">
-<position info="not_deleted" x="544" y="0"/>
+<item historyLabel="peaks" index="11">
+<position info="not_deleted" x="603" y="0"/>
 </item>
-<item historyLabel="findMate" index="10">
-<position info="not_deleted" x="65" y="175"/>
+<item historyLabel="reads1.fq" index="13">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="reverseReads" index="12">
-<position info="not_deleted" x="544" y="0"/>
+<item historyLabel="peaks" index="11">
+<position/>
 </item>
-<item historyLabel="createInversion" index="13">
-<position info="not_deleted" x="49" y="195"/>
+<item historyLabel="coverages_unmapped.sam" index="14">
+<position info="not_deleted" x="2077" y="0"/>
 </item>
-<item historyLabel="findUnmapped" index="11">
-<position info="not_deleted" x="48" y="0"/>
+<item historyLabel="peaks" index="11">
+<position/>
 </item>
-<item historyLabel="findMask" index="14">
-<position info="not_deleted" x="195" y="0"/>
+<item historyLabel="coverages_unmapped.sam" index="14">
+<position info="not_deleted" x="2077" y="0"/>
 </item>
-<item historyLabel="findMate" index="10">
-<position info="not_deleted" x="65" y="175"/>
+<item historyLabel="peaks" index="11">
+<position/>
 </item>
 <item historyLabel="coveragePeaks" index="15">
-<position info="not_deleted" x="376" y="189"/>
+<position info="not_deleted" x="62" y="0"/>
 </item>
-<item historyLabel="createInversion" index="13">
-<position info="not_deleted" x="49" y="195"/>
-</item>
-<item historyLabel="reverseReads" index="12">
-<position info="not_deleted" x="531" y="0"/>
-</item>
-<item historyLabel="findMate" index="10">
-<position info="not_deleted" x="65" y="175"/>
-</item>
-<item historyLabel="reverseReads" index="12">
-<position info="not_deleted" x="531" y="0"/>
-</item>
-<item historyLabel="try.fq" index="16">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="try.fq" index="16">
-<position info="not_deleted" x="1961" y="0"/>
-</item>
-<item historyLabel="reverseReads" index="12">
-<position info="not_deleted" x="803" y="0"/>
-</item>
-<item historyLabel="try.fq" index="17">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="try.fq" index="17">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="reverseReads" index="12">
-<position info="not_deleted" x="434" y="0"/>
-</item>
-<item historyLabel="findMask" index="18">
-<position info="not_deleted" x="195" y="0"/>
-</item>
-<item historyLabel="createInversion" index="19">
-<position info="not_deleted" x="49" y="205"/>
-</item>
-<item historyLabel="whale" index="20">
-<position info="not_deleted" x="772" y="0"/>
-</item>
-<item active="true" historyLabel="reverseReads" index="21">
-<position info="not_deleted" x="253" y="0"/>
+<item active="true" historyLabel="peaks" index="11">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -451,6 +485,9 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topLeft"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -462,6 +499,24 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="coverages_unmapped.sam" tooltip="Work/coverages_unmapped.sam">
+<persistable path="/Work/coverages_unmapped.sam"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="peaks.py" tooltip="Work/peaks.py">
+<persistable path="/Work/peaks.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="locationOf.py" tooltip="Work/locationOf.py">
+<persistable path="/Work/locationOf.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="reads1.fq" tooltip="Work/reads1.fq">
+<persistable path="/Work/reads1.fq"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="readReads1.py" tooltip="Work/readReads1.py">
+<persistable path="/Work/readReads1.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="batman_reads.fq" tooltip="Work/batman_reads.fq">
+<persistable path="/Work/batman_reads.fq"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="whale.py" tooltip="Work/whale.py">
 <persistable path="/Work/whale.py"/>
 </file>
@@ -488,24 +543,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="coveragePeaks.py" tooltip="Work/coveragePeaks.py">
 <persistable path="/Work/coveragePeaks.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="createInversion.py" tooltip="Work/createInversion.py">
-<persistable path="/Work/createInversion.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="seq.txt" tooltip="Work/seq.txt">
-<persistable path="/Work/seq.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="findMask.py" tooltip="Work/findMask.py">
-<persistable path="/Work/findMask.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="findMate.py" tooltip="Work/findMate.py">
-<persistable path="/Work/findMate.py"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="test.txt" tooltip="/home/lisagawr/workspace2/Work/test.txt">
-<persistable uri="file:/home/lisagawr/workspace2/Work/test.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="temp.txt" tooltip="/home/lisagawr/workspace2/Work/temp.txt">
-<persistable uri="file:/home/lisagawr/workspace2/Work/temp.txt"/>
 </file>
 </mruList>
 </workbench>

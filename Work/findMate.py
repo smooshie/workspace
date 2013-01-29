@@ -1,7 +1,12 @@
 '''
 Created on 10.1.2013
+            ::.
+      (\./)  .-""-.
+       `\'-'`      \
+         '.___,_^__/
 
-@author: lisagawr
+     * Whale whale whale, what have we here?
+  
 '''
 comparable = {}
 

@@ -1,5 +1,5 @@
 import sys
-from numpy import NaN, Inf, arange, isscalar, array
+from numpy import NaN, Inf, arange, isscalar, array, asarray
 
 def peakdet(v, delta, x = None):
     """
@@ -59,22 +59,64 @@ def peakdet(v, delta, x = None):
         
         if lookformax:
             if this < mx-delta:
-                maxtab.append((mxpos, mx))
-                mn = this
-                mnpos = x[i]
-                lookformax = False
+                if this < v[i+1]:
+                    continue
+                else:
+                    maxtab.append((mxpos, mx))
+                    mn = this
+                    mnpos = x[i]
+                    lookformax = False
         else:
             if this > mn+delta:
-                mintab.append((mnpos, mn))
-                mx = this
-                mxpos = x[i]
-                lookformax = True
+                if this > v[i+1]:
+                    continue
+                else:
+                    mintab.append((mnpos, mn))
+                    mx = this
+                    mxpos = x[i]
+                    lookformax = True
 
     return array(maxtab), array(mintab)
 
 if __name__=="__main__":
-    series = [0,0,0,2,0,0,0,-2,0,0,0,2,0,0,0,-2,0]
-    maxtab, mintab = peakdet(series,.3)
+    
+    sorted = open("coverage_mapped.txt", "r")
+    sorted12 = open("coverage_mapped12.txt", "r")
+    
+    sorteds = []
+    sortedp = []
+    
+    for line in sorted:
+        part = line.split()
+        sorteds.append(int(part[2]))
+    
+    for line in sorted12:
+        part = line.split()
+        sortedp.append(int(part[2]))
+    
+    sorted.close()
+    sorted12.close()
+    
+    paired_max = open("paired_max.txt", "w")
+    paired_min = open("pairted_min.txt", "w")
+    singles_max = open("singles_max.txt", "w")
+    singles_min = open("singles_min.txt", "w")    
+        
+    #series = [0,0,0,2,0,0,0,-2,0,0,0,2,0,0,0,-2,0]
+    maxtab, mintab = peakdet(sortedp,20)
+    paired_max.write('\n'.join([' '.join(str(entry) for entry in inner) for inner in maxtab]))
+    paired_min.write('\n'.join([' '.join(str(entry) for entry in inner) for inner in mintab]))   
+    paired_max.close()
+    paired_min.close()
+     
+    maxtab, mintab = peakdet(sorteds,20)
+    singles_max.write('\n'.join([' '.join(str(aaa) for aaa in aa) for aa in maxtab]))
+    singles_min.write('\n'.join([' '.join(str(aaa) for aaa in aa) for aa in mintab]))    
+    singles_max.close()
+    singles_min.close()
+  
+    '''
     plot(series)
     scatter(array(maxtab)[:,0], array(maxtab)[:,1], color='blue')
     scatter(array(mintab)[:,0], array(mintab)[:,1], color='red')
+    '''

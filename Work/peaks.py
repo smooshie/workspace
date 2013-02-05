@@ -1,3 +1,4 @@
+
 coverages = open("coverage_unmapped.sam", "r")
 A = []
 
@@ -44,12 +45,15 @@ found = open("peaks_and_snps.txt", "w")
 
 for line in range:
     linepart = line.split("-")
+    count = 0
+    temp = ""
     for snp in snps:
-        if snp[0] == "#":
-            continue
-        count = 0
-        snpart = snp.split()
-        if snpart[1] > linepart[0] and snpart[1] < linepart[1]:
-            count+=1
-        found.write(linepart[0] , "-" , linepart[1] , "||" , count , "SNPs")
+        if snp[0] != "#":
+            snpart = snp.split()
+            if int(snpart[1]) > int(linepart[0]) and int(snpart[1]) < int(linepart[1]):
+                count+=1
+    temp += str(linepart[0]) + "-" + str(linepart[1]) + " * " + str(count) + " SNPs"
+    found.write(temp)
+
+found.close()
             

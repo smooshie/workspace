@@ -1,0 +1,54 @@
+##fileformat=VCFv4.1
+##samtoolsVersion=0.1.18 (r982:295)
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="# high-quality ref-forward bases, r$
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Root-mean-square mapping quality of $
+##INFO=<ID=FQ,Number=1,Type=Float,Description="Phred probability of all samples being$
+##INFO=<ID=AF1,Number=1,Type=Float,Description="Max-likelihood estimate of the first $
+##INFO=<ID=AC1,Number=1,Type=Float,Description="Max-likelihood estimate of the first $
+##INFO=<ID=G3,Number=3,Type=Float,Description="ML estimate of genotype frequencies">
+##INFO=<ID=HWE,Number=1,Type=Float,Description="Chi^2 based HWE test P-value based on$
+##INFO=<ID=CLR,Number=1,Type=Integer,Description="Log ratio of genotype likelihoods w$
+##INFO=<ID=UGT,Number=1,Type=String,Description="The most probable unconstrained geno$
+##INFO=<ID=CGT,Number=1,Type=String,Description="The most probable constrained genoty$
+##INFO=<ID=PV4,Number=4,Type=Float,Description="P-values for strand bias, baseQ bias,$
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an IND$
+##INFO=<ID=PC2,Number=2,Type=Integer,Description="Phred probability of the nonRef all$
+##INFO=<ID=PCHI2,Number=1,Type=Float,Description="Posterior weighted chi^2 P-value fo$
+##INFO=<ID=QCHI2,Number=1,Type=Integer,Description="Phred scaled PCHI2.">
+##INFO=<ID=PR,Number=1,Type=Integer,Description="# permutations yielding a smaller PC$
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=GL,Number=3,Type=Float,Description="Likelihoods for RR,RA,AA genotypes ($
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="# high-quality bases">
+##FORMAT=<ID=SP,Number=1,Type=Integer,Description="Phred-scaled strand bias P-value">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype like$
+#CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO    FORMAT  sorted12.bam
+chromosome:GRCh37:10:1000000:5000000:1  316     .       C       T       95      .    $
+chromosome:GRCh37:10:1000000:5000000:1  3132    .       T       TGG     144     .    $
+chromosome:GRCh37:10:1000000:5000000:1  3343    .       G       A       124     .    $
+chromosome:GRCh37:10:1000000:5000000:1  6091    .       C       T       219     .    $
+chromosome:GRCh37:10:1000000:5000000:1  6314    .       AGTGT   AGTGTGT 201     .    $
+chromosome:GRCh37:10:1000000:5000000:1  7039    .       T       C       162     .    $
+chromosome:GRCh37:10:1000000:5000000:1  8270    .       A       C       160     .    $
+chromosome:GRCh37:10:1000000:5000000:1  10184   .       T       A       97      .    $
+chromosome:GRCh37:10:1000000:5000000:1  11186   .       T       C       170     .    $
+chromosome:GRCh37:10:1000000:5000000:1  12702   .       GT      GTCAT   217     .    $
+chromosome:GRCh37:10:1000000:5000000:1  13146   .       C       T       225     .    $
+chromosome:GRCh37:10:1000000:5000000:1  15492   .       A       C       97      .    $
+chromosome:GRCh37:10:1000000:5000000:1  17238   .       GCT     GCTCCT  214     .    $
+chromosome:GRCh37:10:1000000:5000000:1  24029   .       A       C       141     .    $
+chromosome:GRCh37:10:1000000:5000000:1  24246   .       G       C       225     .    $
+chromosome:GRCh37:10:1000000:5000000:1  29060   .       G       A       160     .    $
+chromosome:GRCh37:10:1000000:5000000:1  31477   .       A       G       225     .    $
+chromosome:GRCh37:10:1000000:5000000:1  32708   .       T       C       74      .    $
+chromosome:GRCh37:10:1000000:5000000:1  33455   .       A       G       225     .    $
+chromosome:GRCh37:10:1000000:5000000:1  35629   .       T       C       145     .    $
+chromosome:GRCh37:10:1000000:5000000:1  36156   .       G       A       147     .    $
+chromosome:GRCh37:10:1000000:5000000:1  37884   .       C       T       168     .    $
+chromosome:GRCh37:10:1000000:5000000:1  37898   .       A       G       111     .    $
+chromosome:GRCh37:10:1000000:5000000:1  40714   .       T       C       182     .    $
+chromosome:GRCh37:10:1000000:5000000:1  42363   .       A       C       148     .    $
+chromosome:GRCh37:10:1000000:5000000:1  48231   .       C       T       133     .    $
+

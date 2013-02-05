@@ -7,26 +7,30 @@ locationOf|0|/home/lisagawr/workspace/Work/locationOf.py
 findMate|0|/home/lisagawr/workspace/Work/findMate.py
 coveragePeaks|0|/home/lisagawr/workspace/Work/coveragePeaks.py
 reverseReads|0|/home/lisagawr/workspace/Work/reverseReads.py
+coverageCompare|0|/home/lisagawr/workspace/Work/coverageCompare.py
 readReads1|0|/home/lisagawr/workspace/Work/readReads1.py
 whale|0|/home/lisagawr/workspace/Work/whale.py
+inserter|0|/home/lisagawr/workspace/Work/inserter.py
 createInversion|0|/home/lisagawr/workspace/Work/createInversion.py
 peaks|0|/home/lisagawr/workspace/Work/peaks.py
 findUnmapped|0|/home/lisagawr/workspace/Work/findUnmapped.py
 -- END DISKCACHE
 -- START DICTIONARY
-9
-9=findMask
+11
+11=findMask
 3=locationOf
-7=coveragePeaks
+9=coveragePeaks
 2=findMate
-4=reverseReads
-8=readReads1
-6=createInversion
-5=whale
+5=reverseReads
+4=coverageCompare
+10=readReads1
+8=createInversion
+7=inserter
+6=whale
 1=peaks
 -- END DICTIONARY
 -- START TREE 1
-21
+24
 A|1|A!11@
 B|1|B!11@
 com|2|comparable!19@comparable!27@
@@ -34,19 +38,22 @@ cou|1|count!11@
 cov|1|coverages!11@
 fir|2|firstover5!11@first!11@
 fou|1|found!11@
+it|1|it!35@
 lin|2|line!11@linepart!11@
-lpa|0|
-mai|3|main!34@main!42@main!50@
+mai|5|main!42@main!50@main!58@main!34@main!66@
 map|2|mappedparts!19@mappedparts!27@
 mat|2|mateparts!27@mateparts!19@
 par|1|parts!11@
-pea|2|peakdet!58@peaks!11@
+pea|2|peakdet!74@peaks!11@
 pos|1|pos!11@
 ran|1|range!11@
-rc|3|rc!34@rc!50@rc!42@
-rea|1|reads1!67@
-seq|1|sequence!75@
+rc|4|rc!42@rc!58@rc!66@rc!50@
+rea|1|reads1!83@
+res|1|result!35@
+seq|1|sequence!91@
 snp|2|snpart!11@snps!11@
+tem|1|temp!11@
+win|1|window!34@
 wri|2|writeto!27@writeto!19@
 -- END TREE
 -- START TREE 2

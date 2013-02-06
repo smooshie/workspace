@@ -1,16 +1,1 @@
-INSTUPcoveragePeaks
-/home/lisagawr/workspace/Work/coveragePeaks.py
-INFOS:&&2|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0&&3|7|2|0&&3|8|2|0&&3|9|2|0&&3|10|2|0&&3|11|2|0&&3|12|2|0&&3|13|2|0&&3|12|2|0&&3|13|2|0
-sorted12=4
-sortedp=6
-sorteds=5
-sorted=3
-singles_min=11
-paired_min=9
-mintab=13
-paired_max=8
-maxtab=12
-peakdet=1
-coveragePeaks=2
-part=7
-singles_max=10
+DELSTRpeaks

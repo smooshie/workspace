@@ -27,6 +27,8 @@ awk 'substr($0,1,1) == "@" || $0 ~/XT:A:M/ || $2 == 77 || $2 == 141 || $2 == 113
 
 samtools view -bS paired_unmapped_n100.sam | samtools sort - paired_n100_sorted | samtools index -
 
+
+
 *** Find pairs of reads that didn't map.
 	- python findMate.py
 	-> paired_and_mates.sam
@@ -34,9 +36,16 @@ samtools view -bS paired_unmapped_n100.sam | samtools sort - paired_n100_sorted 
 
 SNP-CALLING:
 
-samtools mpileup -uD -f human_long.fas sorted12.bam >  mpileup.bcf
+#samtools mpileup -uD -f human_long.fas sorted12.bam >  mpileup.bcf
 
-samtools mpileup -uAf human_long.fasta sorted12.bam | bcftools view -bvcg - > snps_samtools.raw.bcf
+samtools mpileup -uDB -f human_long.fas sorted12.bam >  mpileup.bcf
+
+#samtools mpileup -uAf human_long.fasta sorted12.bam | bcftools view -bvcg - > snps_samtools.raw.bcf
+
+samtools mpileup -uAf human_long.fasta sorted12.bam | bcftools view -bcg - > snps_samtools.raw.bcf
+
+bcftools view snps_samtools.raw.bcf | vcfutils.pl varFilter > mapped12
+_sps_samtools.vcf
 
 if mpileup segfaults:
 

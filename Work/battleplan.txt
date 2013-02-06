@@ -65,6 +65,11 @@ Re-sort:
 
 java -jar ../../picard-tools-1.84/ValidateSamFile.jar I=new_sorted_sorted12.bam
 
+CONSENSUS:
+
+samtools mpileup -uf human_long.fas sorted12.bam | bcftools view -cg - | ../../ngs_test/samtools-0.1.18/bcftools/vcfutils.pl vcf2fq > consensus.fq
+
+
 
 mpileup:
 

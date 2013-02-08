@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="33" version="2.0">
 <workbenchAdvisor/>
-<window height="1124" width="1389" x="227" y="137">
+<window height="1124" width="1385" x="407" y="76">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -47,9 +47,9 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="findMate.py" partName="findMate" path="/home/lisagawr/workspace/Work/findMate.py" title="findMate" tooltip="Work/findMate.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<editor id="org.python.pydev.editor.PythonEditor" name="findMate.py" partName="findMate" path="/home/lisagawr/workspace/Work/findMate.py" title="findMate" tooltip="Work/findMate.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/findMate.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="729" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="571" selectionOffset="154" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.ui.DefaultTextEditor" name="seq.txt" partName="seq.txt" path="/home/lisagawr/workspace/Work/seq.txt" title="seq.txt" tooltip="Work/seq.txt" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/seq.txt"/>
@@ -103,9 +103,9 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/coverageCompare.py"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="465" selectionTopPixel="0"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="regFinder.py" partName="regFinder" path="/home/lisagawr/workspace/Work/regFinder.py" title="regFinder" tooltip="Work/regFinder.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="regFinder.py" partName="regFinder" path="/home/lisagawr/workspace/Work/regFinder.py" title="regFinder" tooltip="Work/regFinder.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/regFinder.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="859" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1997" selectionTopPixel="394"/>
 </editor>
 </editors>
 <views>
@@ -146,7 +146,7 @@
 <view id="org.python.pydev.navigator.view" partName="PyDev Package Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
 <expanded IMemento.internal.id="/home/lisagawr/workspace/Work"/>
-<selected IMemento.internal.id="/home/lisagawr/workspace/Work/findMate.py"/>
+<selected IMemento.internal.id="/home/lisagawr/workspace/Work/regFinder.py"/>
 </viewState>
 </view>
 </views>
@@ -260,7 +260,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@7a6b43c1" ratio="0.7002012" ratioLeft="696" ratioRight="298" relationship="4" relative="topLeft">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7a6b43c1" ratio="0.7525151" ratioLeft="748" ratioRight="246" relationship="4" relative="topLeft">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -318,19 +318,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/reverseReads.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/locationOf.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/regFinder.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/locationOf.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/regFinder.py"/>
 </editors>
-<item historyLabel="coverageCompare" index="0">
-<position info="not_deleted" x="442" y="83"/>
-</item>
-<item historyLabel="coveragePeaks" index="1">
-<position info="not_deleted" x="3017" y="0"/>
-</item>
-<item historyLabel="coverageCompare" index="0">
-<position info="not_deleted" x="306" y="41"/>
-</item>
-<item historyLabel="coveragePeaks" index="1">
-<position info="not_deleted" x="3266" y="0"/>
-</item>
 <item historyLabel="coverageCompare" index="0">
 <position info="not_deleted" x="306" y="41"/>
 </item>
@@ -466,7 +456,19 @@
 <item historyLabel="regFinder" index="18">
 <position info="not_deleted" x="859" y="0"/>
 </item>
-<item active="true" historyLabel="findMate" index="15">
+<item historyLabel="findMate" index="15">
+<position/>
+</item>
+<item historyLabel="locationOf" index="19">
+<position info="not_deleted" x="496" y="0"/>
+</item>
+<item historyLabel="regFinder" index="20">
+<position/>
+</item>
+<item historyLabel="findMate" index="15">
+<position info="not_deleted" x="154" y="571"/>
+</item>
+<item active="true" historyLabel="regFinder" index="20">
 <position/>
 </item>
 </navigationHistory>

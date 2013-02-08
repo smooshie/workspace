@@ -3,6 +3,7 @@
 /home/lisagawr/workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Work/com.python.pydev.analysis/v1_indexcache
 .v1_indexcache
 locationOf|0|/home/lisagawr/workspace/Work/locationOf.py
+findMate|0|/home/lisagawr/workspace/Work/findMate.py
 coveragePeaks|0|/home/lisagawr/workspace/Work/coveragePeaks.py
 reverseReads|0|/home/lisagawr/workspace/Work/reverseReads.py
 coverageCompare|0|/home/lisagawr/workspace/Work/coverageCompare.py
@@ -12,9 +13,10 @@ peaker|0|/home/lisagawr/workspace/Work/peaker.py
 findConsensus|0|/home/lisagawr/workspace/Work/findConsensus.py
 -- END DISKCACHE
 -- START DICTIONARY
-8
+9
 3=locationOf
-8=coveragePeaks
+9=coveragePeaks
+8=findMate
 5=reverseReads
 4=coverageCompare
 7=createInversion
@@ -23,40 +25,52 @@ findConsensus|0|/home/lisagawr/workspace/Work/findConsensus.py
 1=peaker
 -- END DICTIONARY
 -- START TREE 1
-32
+30
 A|2|A!11@A!19@
 B|2|B!11@B!19@
 all|1|allpeaks!11@
 app|1|append!19@
+bou|0|
 com|1|comparable!27@
 con|1|consensus!19@
 cou|1|count!11@
 cov|1|coverages!11@
+fil|0|
 fir|2|first!11@firstover5!11@
 fou|1|found!11@
 it|1|it!35@
 lin|2|linepart!11@line!11@
 mai|4|main!42@main!50@main!34@main!58@
-map|1|mappedparts!27@
-mat|1|mateparts!27@
-max|1|maxtab!67@
-min|1|mintab!67@
-pai|2|paired_min!67@paired_max!67@
-par|2|part!67@parts!11@
-pea|2|peakdet!66@peaks!11@
+map|2|mappedparts!67@mappedparts!27@
+mat|2|mateparts!27@mateparts!67@
+par|1|parts!11@
+pea|2|peakdet!74@peaks!11@
 pos|2|pos!11@pos!19@
 rc|3|rc!42@rc!50@rc!58@
-rea|0|
+rea|1|readflags!67@
 ref|1|reference!19@
+reg|0|
 res|2|result!35@results!19@
-rev|0|
-sin|2|singles_max!67@singles_min!67@
+rf|0|
 snp|1|snpart!11@
-sor|4|sorted!67@sorted12!67@sortedp!67@sorteds!67@
 tem|1|temp!11@
 win|1|window!34@
-wri|1|writeto!27@
+wri|2|writeto!27@writeto!67@
 -- END TREE
 -- START TREE 2
-0
+14
+__i|0|
+all|0|
+bou|0|
+fil|0|
+get|0|
+lib|0|
+mat|0|
+mul|0|
+pos|0|
+rea|0|
+reg|0|
+rf|0|
+thr|0|
+wri|0|
 -- END TREE

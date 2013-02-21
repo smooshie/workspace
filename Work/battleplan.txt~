@@ -23,7 +23,7 @@ After bwa-mapping:
 
 Paired:
 
-awk 'substr($0,1,1) == "@" || $0 ~/XT:A:M/ || $2 == 77 || $2 == 141 || $2 == 113 {print}' mapped12.sam > paired_unmapped.sam
+awk 'substr($0,1,1) == "@" || $0 ~/XT:A:M/ || $2 == 113 {print}' mapped12.sam > paired_unmapped.sam
 
 samtools view -bS paired_unmapped_n100.sam | samtools sort - paired_n100_sorted | samtools index -
 
@@ -42,10 +42,9 @@ samtools mpileup -uDB -f human_long.fas sorted12.bam >  mpileup.bcf
 
 #samtools mpileup -uAf human_long.fasta sorted12.bam | bcftools view -bvcg - > snps_samtools.raw.bcf
 
-samtools mpileup -uAf human_long.fasta sorted12.bam | bcftools view -bcg - > snps_samtools.raw.bcf
+samtools mpileup -uAf human_long.fas sorted12.bam | bcftools view -bcg - > snps_samtools.raw.bcf
 
-bcftools view snps_samtools.raw.bcf | vcfutils.pl varFilter > mapped12
-_sps_samtools.vcf
+bcftools view snps_samtools.raw.bcf | vcfutils.pl varFilter > mapped12_snps_samtools.vcf
 
 if mpileup segfaults:
 
@@ -166,6 +165,8 @@ Run reverseReads.py to:
 	- Singles: unmapped_singles_reversed.fq
 
 Run bwa aln/samse on new reads.
+
+awk 'substr($0,1,1) == "@" || $0 ~/XT:A:M/ || $2 == 77 || $2 == 141 || $2 == 113 {print}' mapped12.sam > paired_unmapped.sam
 
  awk '$4 > 29069 && $4 < 29191 {print}' mapped12.sam > one_reg.txt
 

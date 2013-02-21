@@ -4,9 +4,11 @@ Created on 7.2.2013
 @author: lisagawr
 '''
 import sys
+import os
+global header
 
 class RegionFinder(object) :
-    def __init__(self, library_size, multiplier=2.1) :
+    def __init__(self, library_size, multiplier=1.5) :
         self.library_size = library_size
         self.multiplier = multiplier
         self.threshold = library_size * multiplier
@@ -28,16 +30,20 @@ class RegionFinder(object) :
             regions.append((boundaries[i], boundaries[i+1]))
 
         return regions
-    
-    def test(self, regstart, regend, value):
-        if regstart <= int(value) and int(value) <= regend:
+
+    def test(self, regions, current, value):
+        temp  = regions[current]
+        boundaries = temp[0], temp[1]
+        if boundaries[0] <= int(value) and int(value) <= boundaries[1]:
             return True
         else:
             return False
 
     def writer(self, filename, line):
         writeto = open(filename, "w")
-        writeto.write(line)
+        if os.stat(filename)[6]==0:
+		writeto.write(header)		
+	writeto.write(line)
         writeto.close()
     
 if __name__ == '__main__' :
@@ -54,30 +60,33 @@ if __name__ == '__main__' :
     for entry in readflags.iterkeys():
         positions.append(int(readflags[entry]))
     
-    rf = RegionFinder(500)
+    rf = RegionFinder(500, 1.5)
     regions = rf.get_regions(positions)
-
     current = 0
     writable = ""
-    
+    header = ""
     allreads = open("sorted_mapped12.sam", "r")#java -jar ../../picard-tools-1.84/SortSam.jar I=mapped12.sam O=sorted_mapped12.sam SO$
-
     for line in allreads:
         allparts = line.split()
-        temp  = regions[current]
-        boundaries = int(temp[0]), int(temp[1])
-        if line[0] != "@":
-            if rf.test(boundaries[0], boundaries[1], allparts[3]):
+	if line[0] == "@":
+	    header += line 
+        else:
+            temp  = regions[current]
+            boundaries = temp[0], temp[1]
+            filename = "mapped12_"+str(boundaries[0])+"-"+str(boundaries[1])+".sam"
+            if rf.test(regions, current, allparts[3]):
                 writable += line
             else:
-                filename = "mapped12_"+str(boundaries[0])+"-"+str(boundaries[1])+".sam"
-                rf.writer(filename, writable)
-                writable  = ""
-                if len(regions) > current+1:
-                    temp  = regions[current+1]
-                    boundaries = int(temp[0]), int(temp[1])
-                    if rf.test(boundaries[0], boundaries[1], allparts[3]):
-                        writable += line
-                    current += 1
+		if len(regions)>current+1:
+			if rf.test(regions, current+1, allparts[3]):
+                		if len(writable) != 0:
+                    			rf.writer(filename, writable)
+                    			writable = ""
+               			current += 1
+                		writable = line
+           	else:
+                	if len(writable) != 0:
+                    		rf.writer(filename, writable)
+                    		writable = ""
 
-                    
+    allreads.close()

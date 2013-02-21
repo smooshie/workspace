@@ -2,6 +2,7 @@
 -- START DISKCACHE
 /home/lisagawr/workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Work/com.python.pydev.analysis/v1_indexcache
 .v1_indexcache
+regFinder|0|/home/lisagawr/workspace/Work/regFinder.py
 locationOf|0|/home/lisagawr/workspace/Work/locationOf.py
 findMate|0|/home/lisagawr/workspace/Work/findMate.py
 coveragePeaks|0|/home/lisagawr/workspace/Work/coveragePeaks.py
@@ -13,29 +14,30 @@ peaker|0|/home/lisagawr/workspace/Work/peaker.py
 findConsensus|0|/home/lisagawr/workspace/Work/findConsensus.py
 -- END DISKCACHE
 -- START DICTIONARY
-9
+12
+11=RegionFinder
+10=regFinder
 3=locationOf
 9=coveragePeaks
 8=findMate
 5=reverseReads
 4=coverageCompare
+12=RegionFinder.__init__
 7=createInversion
 6=inserter
 2=findConsensus
 1=peaker
 -- END DICTIONARY
 -- START TREE 1
-30
+28
 A|2|A!11@A!19@
 B|2|B!11@B!19@
 all|1|allpeaks!11@
 app|1|append!19@
-bou|0|
 com|1|comparable!27@
 con|1|consensus!19@
 cou|1|count!11@
 cov|1|coverages!11@
-fil|0|
 fir|2|first!11@firstover5!11@
 fou|1|found!11@
 it|1|it!35@
@@ -49,28 +51,31 @@ pos|2|pos!11@pos!19@
 rc|3|rc!42@rc!50@rc!58@
 rea|1|readflags!67@
 ref|1|reference!19@
-reg|0|
+reg|1|RegionFinder!81@
 res|2|result!35@results!19@
-rf|0|
 snp|1|snpart!11@
+sta|0|
 tem|1|temp!11@
 win|1|window!34@
 wri|2|writeto!27@writeto!67@
 -- END TREE
 -- START TREE 2
-14
-__i|0|
-all|0|
-bou|0|
-fil|0|
-get|0|
-lib|0|
-mat|0|
-mul|0|
-pos|0|
-rea|0|
-reg|0|
-rf|0|
-thr|0|
-wri|0|
+17
+__i|1|__init__!11&82@
+all|2|allreads!11&83@allparts!11&83@
+bou|1|boundaries!11&83@
+cur|1|current!11&83@
+fil|1|filename!11&83@
+get|1|get_regions!11&82@
+lib|1|library_size!12&83@
+mat|1|mateparts!11&83@
+mul|1|multiplier!12&83@
+pos|1|positions!11&83@
+rea|1|readflags!11&83@
+reg|1|regions!11&83@
+rf|1|rf!11&83@
+tem|1|temp!11&83@
+tes|1|test!11&82@
+thr|1|threshold!12&83@
+wri|2|writer!11&82@writable!11&83@
 -- END TREE

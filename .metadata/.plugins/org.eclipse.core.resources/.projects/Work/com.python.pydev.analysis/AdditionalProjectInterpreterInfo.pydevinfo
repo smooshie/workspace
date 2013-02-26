@@ -2,6 +2,7 @@
 -- START DISKCACHE
 /home/lisagawr/workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Work/com.python.pydev.analysis/v1_indexcache
 .v1_indexcache
+RegionFinder|0|/home/lisagawr/workspace/Work/RegionFinder.py
 regFinder|0|/home/lisagawr/workspace/Work/regFinder.py
 locationOf|0|/home/lisagawr/workspace/Work/locationOf.py
 findMate|0|/home/lisagawr/workspace/Work/findMate.py
@@ -10,26 +11,28 @@ reverseReads|0|/home/lisagawr/workspace/Work/reverseReads.py
 coverageCompare|0|/home/lisagawr/workspace/Work/coverageCompare.py
 inserter|0|/home/lisagawr/workspace/Work/inserter.py
 createInversion|0|/home/lisagawr/workspace/Work/createInversion.py
+SamToFastQ|0|/home/lisagawr/workspace/Work/SamToFastQ.py
 peaker|0|/home/lisagawr/workspace/Work/peaker.py
 findConsensus|0|/home/lisagawr/workspace/Work/findConsensus.py
 -- END DISKCACHE
 -- START DICTIONARY
-12
+13
 11=RegionFinder
-10=regFinder
+12=regFinder
 3=locationOf
-9=coveragePeaks
-8=findMate
+10=coveragePeaks
+9=findMate
 5=reverseReads
 4=coverageCompare
-12=RegionFinder.__init__
-7=createInversion
+13=RegionFinder.__init__
+8=createInversion
 6=inserter
+7=SamToFastQ
 2=findConsensus
 1=peaker
 -- END DICTIONARY
 -- START TREE 1
-28
+27
 A|2|A!11@A!19@
 B|2|B!11@B!19@
 all|1|allpeaks!11@
@@ -42,40 +45,40 @@ fir|2|first!11@firstover5!11@
 fou|1|found!11@
 it|1|it!35@
 lin|2|linepart!11@line!11@
-mai|4|main!42@main!50@main!34@main!58@
-map|2|mappedparts!67@mappedparts!27@
-mat|2|mateparts!27@mateparts!67@
+mai|5|main!42@main!50@main!58@main!34@main!66@
+map|2|mappedparts!75@mappedparts!27@
+mat|2|mateparts!27@mateparts!75@
 par|1|parts!11@
-pea|2|peakdet!74@peaks!11@
+pea|2|peakdet!82@peaks!11@
 pos|2|pos!11@pos!19@
-rc|3|rc!42@rc!50@rc!58@
-rea|1|readflags!67@
+rc|3|rc!42@rc!50@rc!66@
+rea|1|readflags!75@
 ref|1|reference!19@
-reg|1|RegionFinder!81@
+reg|2|RegionFinder!89@RegionFinder!97@
 res|2|result!35@results!19@
 snp|1|snpart!11@
-sta|0|
 tem|1|temp!11@
 win|1|window!34@
-wri|2|writeto!27@writeto!67@
+wri|2|writeto!27@writeto!75@
 -- END TREE
 -- START TREE 2
-17
-__i|1|__init__!11&82@
-all|2|allreads!11&83@allparts!11&83@
-bou|1|boundaries!11&83@
-cur|1|current!11&83@
-fil|1|filename!11&83@
-get|1|get_regions!11&82@
-lib|1|library_size!12&83@
-mat|1|mateparts!11&83@
-mul|1|multiplier!12&83@
-pos|1|positions!11&83@
-rea|1|readflags!11&83@
-reg|1|regions!11&83@
-rf|1|rf!11&83@
-tem|1|temp!11&83@
-tes|1|test!11&82@
-thr|1|threshold!12&83@
-wri|2|writer!11&82@writable!11&83@
+18
+__i|2|__init__!11&98@__init__!11&90@
+all|4|allreads!11&99@allreads!11&91@allparts!11&91@allparts!11&99@
+bou|2|boundaries!11&99@boundaries!11&91@
+cur|2|current!11&91@current!11&99@
+fil|2|filename!11&91@filename!11&99@
+get|2|get_regions!11&90@get_regions!11&98@
+hea|1|header!11&91@
+lib|2|library_size!13&91@library_size!13&99@
+mat|2|mateparts!11&99@mateparts!11&91@
+mul|2|multiplier!13&99@multiplier!13&91@
+pos|2|positions!11&91@positions!11&99@
+rea|2|readflags!11&91@readflags!11&99@
+reg|2|regions!11&91@regions!11&99@
+rf|2|rf!11&91@rf!11&99@
+tem|2|temp!11&91@temp!11&99@
+tes|2|test!11&90@test!11&98@
+thr|2|threshold!13&99@threshold!13&91@
+wri|4|writer!11&90@writer!11&98@writable!11&91@writable!11&99@
 -- END TREE

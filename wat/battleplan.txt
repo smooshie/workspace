@@ -1,0 +1,205 @@
+Insertions in toGraph.
+
+From:				to (replaces):
+
+3060-3243			20018-2021
+5012-5134			36061-36183
+6476-6537			10014-10075
+
+
+Insertions in severalSmall:
+
+
+SORTS:
+
+samtools view -bS -q 1 mapped.sam > mapped.bam
+
+samtools view -bS mapped12.sam > all_mapped12.bam
+
+After bwa-mapping:
+
+- Find pairs that did not map.
+- Find matesaved pairs.
+
+Paired:
+
+awk 'substr($0,1,1) == "@" || $0 ~/XT:A:M/ || $2 == 113 {print}' mapped12.sam > paired_unmapped.sam
+
+samtools view -bS paired_unmapped_n100.sam | samtools sort - paired_n100_sorted | samtools index -
+
+
+
+*** Find pairs of reads that didn't map.
+	- python findMate.py
+	-> paired_and_mates.sam
+
+
+SNP-CALLING:
+
+#samtools mpileup -uD -f human_long.fas sorted12.bam >  mpileup.bcf
+
+samtools mpileup -uDB -f human_long.fas sorted12.bam >  mpileup.bcf
+
+#samtools mpileup -uAf human_long.fasta sorted12.bam | bcftools view -bvcg - > snps_samtools.raw.bcf
+
+samtools mpileup -uAf human_long.fas sorted12.bam | bcftools view -bcg - > snps_samtools.raw.bcf
+
+bcftools view snps_samtools.raw.bcf | vcfutils.pl varFilter > mapped12_snps_samtools.vcf
+
+if mpileup segfaults:
+
+Check if the file is ok: 
+
+samtools faidx ref.fa
+
+java -jar ../../picard-tools-1.84/ValidateSamFile.jar I=sorted12.bam
+
+Apply -A to use anomalous read pairs in mpileup, which are not used by default (requring r874+). 
+
+AddReadGroups:
+
+java -jar ../../picard-tools-1.84/AddOrReplaceReadGroups.jar I=sorted12.bam O=new_sorted12.bam LB=frags.fa PL=illumina PU=batman SM=Frags
+
+Re-sort:
+
+java -jar ../../picard-tools-1.84/ValidateSamFile.jar I=new_sorted_sorted12.bam
+
+CONSENSUS:
+
+samtools mpileup -uf human_long.fas sorted12.bam | bcftools view -cg - | ../../ngs_test/samtools-0.1.18/bcftools/vcfutils.pl vcf2fq > consensus.fq
+
+
+
+mpileup:
+
+(samtools mpileup -uD -d 8000 -f human_long.fas new_sorted12.bam >  mpileup.bcf)
+
+bcftools view -bvc mpileup.bcf > SNPcall.raw.bcf
+
+bcftools view SNPcall.raw.bcf | vcfutils.pl varFilter -D100 > SNPs_sorted12.vcf
+
+to visualize varg 
+	- varg builds Relative Variant Density files!
+
+
+
+----------------------
+
+
+for i in ls mapped12*; do mkdir fqs/$i; java -jar ../../../../picard-tools-1.84/SamToFastq.jar VALIDATION_STRINGENCY=SILENT QUIET=true I=$i F=fqs/$i/$i.1 F2=fqs/$i/$i.2; done
+
+for i in ls mapped12*; do mkdir fqs/"dir_"$i; java -jar ../../../../picard-tools-1.84/SamToFastq.jar VALIDATION_STRINGENCY=SILENT QUIET=true I=$i F=fqs/$i/$i.1 F2=fqs/$i/$i.2; done
+
+
+for dir in ls mapped*; do cat $dir/* > $dir/"merged_"$dir".fq"; done
+
+------------
+
+
+
+
+sed -n 16224,16482p filename > newfile
+
+
+
+
+
+
+
+
+
+
+
+
+---- Extract Peaks in Coverage: ----
+
+bamtools coverage -in paired_unmapped_sorted.bam -out coverage_unmapped.sam
+
+
+
+peaks.py -> peak ranges 
+
+
+
+MAKE IT BETTER FFS -> awk '$3 > 5 {print}' coverage_unmapped.sam > test.txt
+
+
+
+TO DO:
+
+	On new set run:
+		- mpileup to generate vcf
+		- varg to generatie variant density file
+		- Figure out how to extract this data.
+
+Use `-BQ0 -d10000000 -f ref.fa' if the purpose is to get the precise depth of coverage rather than call SNPs. Under this setting, mpileup will count low-quality bases, process all reads (by default the depth is capped at 8000), and skip the time-demanding BAQ calculation. 
+
+The reference sequence file ref.fa. To avoid potential mistakes, ref.fa is better the one that is used for read mapping. File ref.fa should be indexed by samtools' faidx, if this has not been done.
+
+    samtools faidx ref.fa  
+
+Different aln/samse/sampe stringency settings:
+
+Do with 2:
+
+Do with 4:
+
+---------------------------------------
+
+New Set:
+
++40
+
+5s: (20,5)->(12,2)
+
+3184-3243 GAAACAAGGTCTTTGCTGTGTCACCCAGGCTGGAGTGCAGTGGCACAATCTCAGCTCACT
+
+6418-6479 AAGACTGACCCCCAGTGTAAACTGCGGACTAAGAACGGGAGGGAGGCGCTGGGTATGGTG
+
+5s: (10,5)->(40,2)
+
+9654-9715 AAGTGTGGGAAATAGAAAGATGAATGGGTTATGGTCCCCATCTTCCAGGAGTTTACAAAT
+
+12890-12951 AGAAGGTGAGTGACCCCCACTGTGGCTGACGCCTGGAGAAGGTGTGTTCTCTGGACCACA
+
+10s: (2,10)->(40,8)
+
+16126-16187 - GGGACCGTGAGCATTTTGGCAGTCATGAGCCCACATGGAAGGCAAGGGACCGTAAGCATT
+
+10s: (2,10)->(40,10)
+
+19359-19421 - CCTGTGCTGCGGGCTGCCTTTCTTGCAGAGAGTAAAGGAGCCGCAGCACAGGTGATGGAGG
+
+20s (1,20)->(40,10)
+
+22593-22654 - GAATGTAAGCCTGTCACGTAACGTGTGGACCCGGCCTAGTAGAATGTAAGCCTGTCGTGC
+
+30s (1,30)->(80,24)
+29069-29191 - AAGTTATTAAAATTCTGTATGATTCAATTTTCTCGACCAATCACATGGCCTTCCTAGTAC
+TTTCCCATTTTGAATGTGTTTCAACTTCTGTTTACGGAGTATTGGCATGGCAGTCTGCCA
+
+
+
+---------Abandoned : ----------------
+
+Find reads that map closer than average (sampledata 500):
+
+awk 'substr($0,1,1) == "@"|| ($9 < 500 && $9 > 0) ||  ($9 > -500 && $9 < 0) {print}' mapped12.sam > paired_close.sam
+
+Singles: (wrong ---> more identifiers needed)
+
+awk 'substr($0,1,1) == "@" || $2 == 4 {print}' mapped.sam > singles_unmapped.sam
+
+Run reverseReads.py to:
+	- Find the read + syntax from reads*.fq using unique identifier.
+	- Reverse the read.
+	- Paired: unmapped_paired_reversed.fq
+	- Singles: unmapped_singles_reversed.fq
+
+Run bwa aln/samse on new reads.
+
+awk 'substr($0,1,1) == "@" || $0 ~/XT:A:M/ || $2 == 77 || $2 == 141 || $2 == 113 {print}' mapped12.sam > paired_unmapped.sam
+
+ awk '$4 > 29069 && $4 < 29191 {print}' mapped12.sam > one_reg.txt
+
+

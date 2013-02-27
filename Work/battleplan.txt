@@ -93,13 +93,12 @@ for i in ls mapped12*; do mkdir fqs/"dir_"$i; java -jar ../../../../picard-tools
 
 for dir in ls mapped*; do cat $dir/* > $dir/"merged_"$dir".fq"; done
 
-
 ------------
 
 
 
 
-
+sed -n 16224,16482p filename > newfile
 
 
 

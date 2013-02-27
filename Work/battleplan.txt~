@@ -81,6 +81,37 @@ bcftools view SNPcall.raw.bcf | vcfutils.pl varFilter -D100 > SNPs_sorted12.vcf
 to visualize varg 
 	- varg builds Relative Variant Density files!
 
+
+
+----------------------
+
+
+for i in ls mapped12*; do mkdir fqs/$i; java -jar ../../../../picard-tools-1.84/SamToFastq.jar VALIDATION_STRINGENCY=SILENT QUIET=true I=$i F=fqs/$i/$i.1 F2=fqs/$i/$i.2; done
+
+for i in ls mapped12*; do mkdir fqs/"dir_"$i; java -jar ../../../../picard-tools-1.84/SamToFastq.jar VALIDATION_STRINGENCY=SILENT QUIET=true I=$i F=fqs/$i/$i.1 F2=fqs/$i/$i.2; done
+
+
+for dir in ls mapped*; do cat $dir/* > $dir/"merged_"$dir".fq"; done
+
+
+------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---- Extract Peaks in Coverage: ----
 
 bamtools coverage -in paired_unmapped_sorted.bam -out coverage_unmapped.sam
@@ -88,6 +119,8 @@ bamtools coverage -in paired_unmapped_sorted.bam -out coverage_unmapped.sam
 
 
 peaks.py -> peak ranges 
+
+
 
 MAKE IT BETTER FFS -> awk '$3 > 5 {print}' coverage_unmapped.sam > test.txt
 

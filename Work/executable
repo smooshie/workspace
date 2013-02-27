@@ -1,0 +1,25 @@
+echo Extracting mate-saved reads...
+awk 'substr($0,1,1) == "@" || $0 ~/XT:A:M/ {print}' mapped12.sam > paired_unmapped.sam
+echo Making BAM-file...
+samtools view -bS -q 1 paired_unmapped.sam > paired_unmapped.bam
+samtools sort paired_unmapped.bam sorted_paired_unmapped
+samtools index sorted_paired_unmapped.bam
+echo Making coverage-file...
+bamtools coverage -in sorted_paired_unmapped.bam -out coverages_paired_unmapped.txt
+echo Preparing for region finding...
+java -jar ../../../bin/SortSam.jar I=mapped12.sam O=sorted_mapped12.sam SO=coordinate
+mkdir sams
+mv RegionFinder.py sams/.
+mv paired_unmapped.sam sams/.
+mv sorted_mapped12.sam sams/.
+cd sams
+mkdir fqs
+echo Finding regions...
+python RegionFinder.py
+echo Converting all files to FQ-format...
+for i in ls mapped12*; do mkdir fqs/$i; java -jar ../../../../picard-tools-1.84/SamToFastq.jar VALIDATION_STRINGENCY=SILENT QUIET=true I=$i F=fqs/$i/$i.1 F2=fqs/$i/$i.2; done
+cd fqs
+for dir in ls mapped*; do cat $dir/* > $dir/"merged_"$dir".fq"; done
+mkdir ../../complete
+for dir in ls mapped*; do cp $file/"merged_"$dir".fq" ../../complete/. ; done
+echo All merged FQ-reads in 'complete'-folder.

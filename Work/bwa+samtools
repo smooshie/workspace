@@ -1,0 +1,18 @@
+echo Making reads1 and reads2...
+awk 'int((NR-1)/4)%2==0 {print $0}' reads.fq > reads1.fq 
+awk 'int((NR-1)/4)%2==1 {print $0}' reads.fq > reads2.fq 
+echo BWA-mapping...
+bwa index human_long.fas
+bwa aln human_long.fas reads.fq > mapped.sai
+bwa aln human_long.fas reads1.fq > mapped1.sai
+bwa aln human_long.fas reads2.fq > mapped2.sai
+bwa samse human_long.fas mapped.sai reads.fq > mapped.sam
+bwa sampe human_long.fas mapped1.sai mapped2.sai reads1.fq reads2.fq > mapped12.sam
+echo Filter and convert to BAM...
+samtools view -bS -q 1 mapped.sam > mapped.bam
+samtools sort mapped.bam sorted
+samtools index sorted.bam
+samtools view -bS -q 1 mapped12.sam > mapped12.bam
+samtools sort mapped12.bam sorted12
+samtools index sorted12.bam
+echo Files: mapped.sam -> sorted.bam, mapped12.sam > sorted12.bam

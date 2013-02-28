@@ -1,5 +1,3 @@
-from collections import Counter
-
 
 def read_file(f) :
     return map(int, filter(lambda x: x.strip() != '', open(f).readlines()))

@@ -11,14 +11,25 @@ Created on 7.2.2013
 
 '''
 import os
+import sys
 
 class RegionFinder() :
     
     def __init__(self) :
-        library_size = raw_input("Insert library size: ")
-        self.library_size = int(library_size)
-        self.header = ""
-        
+	try:
+		args = sys.argv
+		self.matesaved = args[1]
+		self.sorted = args[2]
+        	self.library_size = int(args[3])
+        	self.header = ""
+	except IndexError:
+		print "\n\n"
+		print "ERROR. Wrong input." 
+		print "\n Usage: python RegionFinder.py matesavedSamFile sortedMappedSamFile  librarySize ."
+		print "\n   (e.g.) python RegionFinder.py matesaved.sam sorted_mapped.sam 500"
+		print "\n\n"		
+		sys.exit(0)
+
     def read_file(self, f) :
         return map(int, filter(lambda x: x.strip() != '', open(f).readlines()))
 
@@ -47,7 +58,7 @@ if __name__ == '__main__' :
     values = []
     
     #read matesw-reads from file store their pairs location
-    with open('paired_unmapped.sam', 'r') as matesw:
+    with open(rf.matesaved, 'r') as matesw:
         for line in matesw:
             line.rstrip()
             if line[0] != "@":
@@ -109,7 +120,7 @@ if __name__ == '__main__' :
     
     current = 0
     writable = ""
-    allreads = open("sorted_mapped12.sam", "r")#java -jar ../../picard-tools-1.84/SortSam.jar I=mapped12.sam O=sorted_mapped12.sam SO$
+    allreads = open(rf.sorted, "r")#java -jar ../../picard-tools-1.84/SortSam.jar I=mapped12.sam O=sorted_mapped12.sam SO$
     for line in allreads:
         allparts = line.split()
         if line[0] == "@":
@@ -133,3 +144,4 @@ if __name__ == '__main__' :
                         rf.writer(filename, writable)
                         writable = ""
     allreads.close()
+

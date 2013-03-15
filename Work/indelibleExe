@@ -1,0 +1,65 @@
+python indelibleParser.py
+
+echo simNGS:
+
+mkdir frags
+for each in `ls *_B.fas`; do name=${each%.fas}; cat $each | simLibrary --insert 500 --readlen 100 --coverage 10 --bias 1 > frags/$name".fa"; done
+cd frags
+for each in `ls`; do name=${each%.fa}; cat $each | simNGS --ncycle 100 --paired paired -o fastq ~/ngs_test/simNGS/data/s_3_4x.runfile > "reads_"$name".fq"; done
+for each in `ls reads_*`; do name=${each%.fq}; awk 'int((NR-1)/4)%2==0 {print $0}' $each > $name"1.fq"; done
+for each in `ls reads_*`; do name=${each%.fq}; awk 'int((NR-1)/4)%2==1 {print $0}' $each > $name"2.fq"; done
+cd ..
+
+echo bwa indexing and prep:
+
+mkdir mappings
+
+for each in `ls indel*A.fas`; do name=${each%_A.fas}; mkdir mappings/$name; done
+
+for each in `ls mappings/`; do for file in `ls frags/reads_*.fq`; do name1=${file#*_}; name2=${name1%_B*.fq}; if [[ ${name2} == ${each} ]]; then cp $file mappings/$each/$name1; fi; done; done
+
+for each in `ls mappings/`; do for file in `ls *_A.fas`; do name=${file%_A.fas}; if [[ ${name} == ${each} ]]; then cp $file mappings/$each/$file; fi; done; done
+
+for each in `ls mappings/indelible_*/*_A.fas`; do bwa index $each; done
+
+echo bwa aln:
+
+for each in `ls mappings`; do ref=$each"_A.fas"; map=$each"_B.fq"; filename="mapped_"$each".sai"; bwa aln mappings/$each/$ref mappings/$each/$map > mappings/$each/$filename; done
+
+for each in `ls mappings`; do ref=$each"_A.fas"; map=$each"_B1.fq"; filename="mapped_"$each"_1.sai"; bwa aln mappings/$each/$ref mappings/$each/$map > mappings/$each/$filename; done
+
+for each in `ls mappings`; do ref=$each"_A.fas"; map=$each"_B2.fq"; filename="mapped_"$each"_2.sai"; bwa aln mappings/$each/$ref mappings/$each/$map > mappings/$each/$filename; done
+
+echo "bwa sampe/samse:"
+
+for each in `ls mappings/`; do ref=$each"_A.fas"; reads=$each"_B.fq"; sai="mapped_"$each".sai"; filename="mapped_"$each".sam"; bwa samse mappings/$each/$ref mappings/$each/$sai mappings/$each/$reads > mappings/$each/$filename; done
+
+for each in `ls mappings/`; do ref=$each"_A.fas"; reads1=$each"_B1.fq"; reads2=$each"_B2.fq"; sai1="mapped_"$each"_1.sai"; sai2="mapped_"$each"_2.sai"; filename="mapped_"$each"_12.sam"; bwa sampe mappings/$each/$ref mappings/$each/$sai1 mappings/$each/$sai2  mappings/$each/$reads1 mappings/$each/$reads2 > mappings/$each/$filename; done
+
+echo "filter for mapq 20"
+
+for each in `ls mappings/`; do sam=$"mapped_"$each"_12.sam"; filename="q20_mapped_"$each"_12.sam"; samtools view -Shq 20 mappings/$each/$sam > mappings/$each/$filename; done
+
+for each in `ls mappings/`; do input="q20_mapped_"$each"_12.sam" output="sorted_q20_mapped_"$each"_12.sam"; java -jar ../../bin/SortSam.jar I=mappings/$each/$input O=mappings/$each/$output SO=coordinate; done
+
+echo "look for matesaved reads:"
+
+for each in `ls mappings/`; do sam="q20_mapped_"$each"_12.sam"; filename="filtered_matesaved_"$each".sam"; awk 'substr($0,1,1) == "@" || $0 ~/XT:A:M/ {print}' mappings/$each/$sam > mappings/$each/$filename; done
+
+echo "bam from matesaved reads and mapped12."
+
+for each in `ls mappings/`; do input="filtered_matesaved_"$each".sam"; output="filtered_matesaved_"$each".bam"; samtools view -bS mappings/$each/$input > mappings/$each/$output; done
+
+for each in `ls mappings/`; do input="filtered_matesaved_"$each".bam"; output="sorted_f_matesaved_"$each; samtools sort mappings/$each/$input mappings/$each/$output; done
+
+for each in `ls mappings/`; do input="sorted_f_matesaved_"$each".bam"; samtools index mappings/$each/$input; done
+
+echo "Running Region Finder..."
+
+for each in `ls mappings/`; do cp RegionFinder.py mappings/$each/. ; done
+
+for each in `ls mappings/`; do mates="filtered_matesaved_"$each".sam"; sorted="sorted_q20_mapped_"$each"_12.sam"; python mappings/$each/RegionFinder.py mappings/$each/$mates mappings/$each/$sorted 500; mv mapped12_* mappings/$each/. ; done
+
+for each in `ls mappings/`; do echo $each; ls mappings/$each/mapped12_* | wc -l; done
+
+ls mappings/indelible_*/mapped12_* |wc -l

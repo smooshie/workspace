@@ -1,0 +1,4 @@
+from 30 took ['T', 'T', 'A', 'C', 'A'] --> 10-12 inserted TGTAA 
+from 60 took ['C', 'A', 'G', 'A', 'T'] --> 40-42 inserted ATCTG 
+from 90 took ['A', 'T', 'T', 'A', 'C'] --> 70-72 inserted GTAAT 
+from 120 took ['A', 'C', 'A', 'G', 'A'] --> 100-102 inserted TCTGT 

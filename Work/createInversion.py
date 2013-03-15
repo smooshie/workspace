@@ -31,16 +31,13 @@ def main():
                         seq.append(i)
     
     indexes = open("indexes.txt", "w")
-    for i in range (1, 900000):
-        if i % 5000 == 0:
+    for i in range (1, 130):
+        if i % 30 == 0:
             reversd = rc(seq[i:i+5])
             indexes.write("from " + str(i) + " took " + str(seq[i:i+5]) + " --> " + str(i-20) + "-" + str(i-18) + " inserted " + reversd + " \n")
             seq.pop(i-20)
             seq.pop(i-19)
-            seq.pop(i-18)
-            seq.pop(i-17)
-            seq.pop(i-16)
-            seq.insert(i-20, reversd)
+            seq.insert(i-21, reversd)
         
     
     done = open("human_altered.fas", "w")

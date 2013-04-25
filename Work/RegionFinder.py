@@ -11,24 +11,27 @@ Created on 7.2.2013
 
 '''
 import os
-import sys
+#import sys
 
 class RegionFinder() :
     
     def __init__(self) :
-	try:
-		args = sys.argv
-		self.matesaved = args[1]
-		self.sorted = args[2]
-        	self.library_size = int(args[3])
-        	self.header = ""
-	except IndexError:
-		print "\n\n"
-		print "ERROR. Wrong input." 
-		print "\n Usage: python RegionFinder.py matesavedSamFile sortedMappedSamFile  librarySize ."
-		print "\n   (e.g.) python RegionFinder.py matesaved.sam sorted_mapped.sam 500"
-		print "\n\n"		
-		sys.exit(0)
+        try:
+            self.matesaved = "filtered_paired_unmapped.sam"
+            self.sorted = "sorted_uniq_q20_mapped12.sam"
+            self.library_size = 500
+    		#args = sys.argv
+    		#self.matesaved = args[1]
+    		#self.sorted = args[2]
+            #self.library_size = int(args[3])
+            self.header = ""
+        except IndexError:
+            print "\n\n"
+            print "ERROR. Wrong input." 
+            print "\n Usage: python RegionFinder.py matesavedSamFile sortedMappedSamFile  librarySize ."
+            print "\n   (e.g.) python RegionFinder.py matesaved.sam sorted_mapped.sam 500"
+            print "\n\n"		
+            #sys.exit(0)
 
     def read_file(self, f) :
         return map(int, filter(lambda x: x.strip() != '', open(f).readlines()))
@@ -51,7 +54,10 @@ class RegionFinder() :
         if os.stat(filename)[6]==0:
             writeto.write(rf.header)		
         writeto.write(line)
-        writeto.close()    
+        writeto.close()
+        
+    def coverageCalc(self, coverage, region):
+        return 0
         
 if __name__ == '__main__' :
     rf = RegionFinder()
@@ -65,6 +71,13 @@ if __name__ == '__main__' :
                 mateparts = line.split()
                 values.append(int(mateparts[7])) #pos-of-next
     values.sort()
+    
+    #do coverage stuff
+    coverage = {}
+    with open("coverage.txt", "r") as coverages:
+        for line in coverages:
+            part = line.split()
+            coverage[part[1]] = part[2]
 
     breaks = (values[-1] - values[0]) / rf.library_size
     bin_length = (values[-1] - values[0]) / (breaks - 1)
@@ -102,6 +115,8 @@ if __name__ == '__main__' :
         
         peak_set[location] = freq
     f.close()
+    
+    print peak_set
     
     thresh = sorted(peak_set.values())[3*(len(peak_set)/4)] #the threshold peaks should go over
     
@@ -144,4 +159,6 @@ if __name__ == '__main__' :
                         rf.writer(filename, writable)
                         writable = ""
     allreads.close()
+    
+    
 

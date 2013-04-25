@@ -4,6 +4,7 @@ args = sys.argv
 
 try:
 	print args[1]
+	print args[1]*2
 	print int(args[1])*2	
 
 except IndexError:

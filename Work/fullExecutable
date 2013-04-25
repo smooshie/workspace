@@ -1,0 +1,53 @@
+cat human_altered.fas | simLibrary --insert 500 --readlen 100 --coverage 50 --bias 1 > frags.fa
+cat frags.fa | simNGS --ncycle 100 --paired paired -o fastq ~/ngs_test/simNGS/data/s_3_4x.runfile > reads.fq
+
+echo Making reads1 and reads2...
+awk 'int((NR-1)/4)%2==0 {print $0}' reads.fq > reads1.fq
+awk 'int((NR-1)/4)%2==1 {print $0}' reads.fq > reads2.fq
+echo BWA-mapping...
+bwa index human_long.fas
+bwa aln human_long.fas reads.fq > mapped.sai
+bwa aln human_long.fas reads1.fq > mapped1.sai
+bwa aln human_long.fas reads2.fq > mapped2.sai
+bwa samse human_long.fas mapped.sai reads.fq > mapped.sam
+bwa sampe human_long.fas mapped1.sai mapped2.sai reads1.fq reads2.fq > mapped12.sam
+echo Filter and convert to mapped.sam to BAM...
+samtools view -bS -q 1 mapped.sam > mapped.bam
+samtools sort mapped.bam sorted
+samtools index sorted.bam
+echo Filter and covert to mapped12.sam to BAM...
+samtools view -bS -q 1 mapped12.sam > mapped12.bam
+samtools sort mapped12.bam sorted12
+samtools index sorted12.bam
+echo Files: mapped.sam -> sorted.bam, mapped12.sam > sorted12.bam
+
+samtools view -Shq 20 mapped12.sam > q20_mapped12.sam
+awk 'substr($0,1,1) == "@" || $0 ~/XT:A:M/ {print}' q20_mapped12.sam > q20_paired_unmapped.sam
+python removeMasked.py human_long_masked.fas q20_paired_unmapped.sam 90
+samtools view -bS filtered_paired_unmapped.sam > filtered_paired_unmapped.bam
+samtools sort filtered_paired_unmapped.bam sorted_filtered_paired_unmapped
+samtools index sorted_filtered_paired_unmapped.bam
+java -jar ~/bin/SortSam.jar I=q20_mapped12.sam O=sorted_q20_mapped12.sam SO=coordinate
+awk 'substr($0,1,1) == "@" || $0 ~/XT:A:M/ || $0 ~/XT:A:U/ {print}' sorted_q20_mapped12.sam > sorted_uniq_q20_mapped12.sam
+mkdir sams
+cp RegionFinder.py sams/.
+cp filtered_paired_unmapped.sam sams/.
+cp sorted_uniq_q20_mapped12.sam sams/.
+cd sams
+mkdir fqs
+echo "Finding regions..."
+python RegionFinder.py filtered_paired_unmapped.sam sorted_uniq_q20_mapped12.sam 500
+echo Converting all files to FQ-format...
+for i in `ls mapped12*`; do name=${i%.sam}; mkdir fqs/$name; java -jar ~/picard-tools-1.84/SamToFastq.jar VALIDATION_STRINGENCY=SILENT QUIET=true I=$i F=fqs/$name/toFq_reads.1 F2=fqs/$name/toFq_reads.2; done
+cd fqs
+for dir in `ls`; do name=${dir##*_}; cat $dir/* > $dir/"merged_"$name".fq"; done
+
+for dir in `ls`; do range=${dir##*_}; name="merged_"$range".fq"; sga index $dir/$name; done
+
+for dir in `ls -d mapped12_*`; do range=${dir##*_}; name="merged_"$range".fq"; sga overlap -m 65 $dir/$name; done
+
+for i in `ls *.asqg.gz`; do name=${i%.asqg.gz}; sga assemble -m 75 -o "complete_"$name $i; done
+
+mkdir complete_contigs
+mv complete_merged_*-contigs.fa complete_contigs/.
+

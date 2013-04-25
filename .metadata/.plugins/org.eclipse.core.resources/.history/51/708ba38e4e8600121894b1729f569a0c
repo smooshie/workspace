@@ -1,0 +1,34 @@
+'''
+Created on 6.3.2013
+
+@author: lisagawr
+'''
+def find_overlaps(dataset):
+    maxlen = 0
+    for contig in dataset:
+        if len(contig) > maxlen:
+            maxlen = len(contig)
+            maxcontig = contig
+    print maxcontig
+    print len(maxcontig)
+    for contig in dataset:
+        if contig == maxcontig:
+            continue
+        else:
+            substrs = {}
+            for i in contig:
+                substrs[contig[i:i+20]] = 0
+            for key in substrs.iter_keys:
+                if maxcontig.find(key):
+                    substrs[key] += 1
+            
+if __name__ == "__main__":
+    large_dataset = []
+    with open ("default-contigs.fa", "r") as f:
+        for line in f:
+            if line[0] == ">":
+                continue
+            else:
+                large_dataset.append(line.rstrip())
+    print large_dataset
+    find_overlaps(large_dataset)

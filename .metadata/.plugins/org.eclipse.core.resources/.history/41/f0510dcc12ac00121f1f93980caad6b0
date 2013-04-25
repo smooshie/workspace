@@ -1,0 +1,26 @@
+'''
+Created on 23.4.2013
+
+@author: lisagawr
+'''
+peak_set = {}
+with open ("high_peaks", "r") as high_peaks:
+    for line in high_peaks:
+        part = line.split()
+        peak_set[part[0]] = part[1]
+
+places = []
+for key in peak_set.iterkeys():
+    places.append(key)
+
+sorted = sorted(places)
+finished = {}
+for entry in sorted:
+    index = sorted.index(entry)
+    if index+1 < len(sorted):
+        if (int(entry) + 10000) >= sorted[index+1]:
+            print "!", entry, sorted[index+1]
+            finished[entry] = peak_set[entry]
+            
+print len(peak_set)
+print len(finished)

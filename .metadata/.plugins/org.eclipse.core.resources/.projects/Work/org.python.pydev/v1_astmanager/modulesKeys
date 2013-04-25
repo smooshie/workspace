@@ -5,8 +5,12 @@ charAt|/home/lisagawr/workspace/Work/charAt.py
 coverageCompare|/home/lisagawr/workspace/Work/coverageCompare.py
 coveragePeaks|/home/lisagawr/workspace/Work/coveragePeaks.py
 createInversion|/home/lisagawr/workspace/Work/createInversion.py
+digit|/home/lisagawr/workspace/Work/digit.py
+divide|/home/lisagawr/workspace/Work/divide.py
+fastqInterlace|/home/lisagawr/workspace/Work/fastqInterlace.py
 findConsensus|/home/lisagawr/workspace/Work/findConsensus.py
 findMate|/home/lisagawr/workspace/Work/findMate.py
+headerRename|/home/lisagawr/workspace/Work/headerRename.py
 indelibleParser|/home/lisagawr/workspace/Work/indelibleParser.py
 inserter|/home/lisagawr/workspace/Work/inserter.py
 locationOf|/home/lisagawr/workspace/Work/locationOf.py
@@ -16,4 +20,5 @@ peaker|/home/lisagawr/workspace/Work/peaker.py
 peaks|/home/lisagawr/workspace/Work/peaks.py
 regFinder|/home/lisagawr/workspace/Work/regFinder.py
 reverseReads|/home/lisagawr/workspace/Work/reverseReads.py
+rmdDup|/home/lisagawr/workspace/Work/rmdDup.py
 shortestSuperstring|/home/lisagawr/workspace/Work/shortestSuperstring.py

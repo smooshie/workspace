@@ -1,0 +1,35 @@
+'''
+Created on 21.1.2013
+
+@author: lisagawr
+'''
+
+def rc(input):
+    complement = { "A" : "T", "T" : "A", "C" : "G", "G" : "C"}
+    result = [] 
+    for i in reversed(input): 
+        result.append(complement[i])
+    
+    return ''.join(result)
+
+def main():
+    readflags = {}
+    counter = 1;
+    
+    reads = open("batman_reads.fq", "w")
+    
+    with open('batman.sam', 'r') as matesw:
+        for line in matesw:
+            mateparts = line.split()
+            reversedSeq = rc(mateparts[9])
+            readflags[mateparts[10]] = reversedSeq
+    
+    print readflags
+    with open('reads1.fq', "r") as reads1:
+        for line in reads1:
+            if line in readflags:
+                reads.write(line)
+    rev.close()
+    reads.close()
+
+main()

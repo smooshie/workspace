@@ -46,7 +46,7 @@ def find_overlaps(dataset):
 
 if __name__ == "__main__":
     dataset = []
-    with open ("default-contigs.txt", "r") as f:
+    with open ("default-contigs.fa", "r") as f:
         for line in f:
             if line[0] == ">":
                 continue

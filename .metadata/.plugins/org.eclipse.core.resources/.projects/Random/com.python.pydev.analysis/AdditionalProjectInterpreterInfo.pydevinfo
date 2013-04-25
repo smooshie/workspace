@@ -2,47 +2,45 @@
 -- START DISKCACHE
 /home/lisagawr/workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Random/com.python.pydev.analysis/v1_indexcache
 .v1_indexcache
-pythonClass|0|/home/lisagawr/workspace/Random/pythonClass.py
 bonusGame|0|/home/lisagawr/workspace/Random/bonusGame.py
 chomsky|0|/home/lisagawr/workspace/Random/chomsky.py
 -- END DISKCACHE
 -- START DICTIONARY
-8
-2=pythonClass
+4
 1=bonusGame
-7=bonus.__init__
-6=game.__init__
-5=bonus
-4=game
-8=bonus.bonus_round
-3=chomsky
+4=bonus.__init__
+3=bonus
+2=chomsky
 -- END DICTIONARY
 -- START TREE 1
-7
-bon|3|bonus!11@bonus!9@bonus!17@
-cho|1|chomsky!26@
-gam|1|game!17@
-lea|1|leadins!27@
-obj|1|objects!27@
-sub|1|subjects!27@
-ver|1|verbs!27@
+10
+bes|0|
+bon|1|bonus!9@
+cho|1|chomsky!18@
+gam|0|
+lea|1|leadins!19@
+nam|0|
+obj|1|objects!19@
+pla|0|
+sub|1|subjects!19@
+ver|1|verbs!19@
 -- END TREE
 -- START TREE 2
 16
-__i|3|__init__!4&18@__init__!5&18@__init__!5&10@
-bes|1|bestOf!6&19@
-bon|2|bonus_round!5&10@bonus_round!5&18@
-com|3|computerTot!7&11@computerTot!7&19@computerScore!6&19@
-cor|3|correct!5&10@correct!5&18@correct_or_not!5&10@
-cur|2|currentPoints!5&18@currentPoints!5&10@
-ful|2|fullLoop!8&11@fullLoop!7&11@
-hea|2|heads_or_tails!5&10@heads_or_tails!5&18@
-nam|1|name_to_number!4&18@
-nex|1|next_round!4&18@
-num|1|number_to_name!4&18@
-pla|3|playerTot!7&11@playerScore!6&19@playerTot!7&19@
-rou|1|rounds!7&11@
-rps|1|rpsls!4&18@
-sco|1|score!4&18@
-tie|1|ties!6&19@
+__i|1|__init__!3&10@
+bes|0|
+bon|1|bonus_round!3&10@
+com|1|computerTot!4&11@
+cor|2|correct!3&10@correct_or_not!3&10@
+cur|1|currentPoints!3&10@
+ful|1|fullLoop!4&11@
+hea|1|heads_or_tails!3&10@
+nam|0|
+nex|0|
+num|0|
+pla|1|playerTot!4&11@
+rou|1|rounds!4&11@
+rps|0|
+sco|0|
+tie|0|
 -- END TREE

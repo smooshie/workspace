@@ -1,3 +1,8 @@
+'''
+Created on 24.4.2013
+
+@author: lisagawr
+'''
 from random import randrange, randint, choice
 
 class bonus():
@@ -6,13 +11,12 @@ class bonus():
         self.playerTot = 5
         self.computerTot = 5
         self.rounds = 0
+        self.fullLoop = False
         
     def heads_or_tails(self):
         sides = ["heads", "tails"]
         print "Double Round: Heads or Tails!\n"
         playerSide = raw_input("Choose heads or tails : ").lower().lstrip().rstrip()
-        while playerSide not in sides:
-            playerSide = raw_input("Wrong input. Choose heads or tails : ").lower().lstrip().rstrip()
         print "Player chooses ", playerSide
         winner = choice(sides)
         print "Tossed coin: ", winner
@@ -26,8 +30,8 @@ class bonus():
     def correct(self, who):
         if who == "Player":
             hot = raw_input("Do you want to try to double? (y/n) ")
-            while hot != "y" and hot != "n":
-                hot = raw_input("Wrong input. Do you want to try to double? Write y for yes, n for no.")
+            if hot != "n" or hot != "y":
+                hot = raw_input("Wrong input. Do you want to try to double? (y/n) ")
             if hot == "y":
                 double = bonus.heads_or_tails()
             elif hot == "n":
@@ -55,7 +59,7 @@ class bonus():
             bonus.correct(who)
                
     def currentPoints(self):
-        print "\nPlayer's current points: ", bonus.playerTot
+        print "Player's current points: ", bonus.playerTot
         print "Computer's current points: ", bonus.computerTot
         
     def bonus_round(self):
@@ -104,83 +108,7 @@ class bonus():
             print "Computer coins reached 20, computer won!"
         elif self.computerTot >= 20 and self.playerTot >= 20:
             print "Both players reached 20 on the same turn! How is this possible?! Go play some other game!"
-              
-class game():
-    def __init__(self):
-        self.playerScore = 0
-        self.computerScore = 0
-        self.ties = 0
-        self.bestOf = 0
-    
-    def score(self, playerPoints, computerPoints, tiePoints):
-        game.playerScore += playerPoints
-        game.computerScore += computerPoints
-        game.ties += tiePoints
-        if game.playerScore + game.computerScore + game.ties < game.bestOf:
-            print "Current score:\nPlayer :", game.playerScore, "Computer: ", game.computerScore
-            if game.playerScore == game.computerScore:
-                print "Player and computer are tied!"
-            elif game.playerScore > game.computerScore:
-                print "Player leads!"
-            else:
-                print "Computer leads!"
-            game.next_round()
-        else:
-            if game.playerScore > game.computerScore:
-                print "Player wins the game with a score of ", game.playerScore, "out of ", game.bestOf, "!"
-            elif game.playerScore < game.computerScore:
-                print "Computer wins the game with a score of ", game.computerScore, "out of ", game.bestOf, "!"
-            elif game.playerScore == game.computerScore:
-                print "Player and Computer tie the game at ", game.playerScore, "-", game.computerScore
-                print "\nIt's time for the bonus round!"
-                bonus.bonus_round()
-    
-    def name_to_number(self, name):
-        name = name.lower()
-        names = {"rock" : 0, "spock" : 1, "paper" : 2, "lizard" : 3, "scissors" : 4}
-        if name in names:
-            return names[name]
-        else:
-            return -1 #entry mispelled or not in game.
             
-    def number_to_name(self, number):
-        numbers = {0 : "rock", 1 : "Spock", 2 : "paper", 3 : "lizard", 4 : "scissors"}
-        return numbers[number]
-    
-    def next_round(self):
-        playerChoice = raw_input("\nInput your choice (rock, Spock, paper, lizard, scissors) : ")
-        game.rpsls(playerChoice)
-    
-    def rpsls(self, name):
-        game.bestOf = bestOf
-        playerNum = game.name_to_number(name)
-        if playerNum >= 0: #check if entry acceptable
-            computerNum = randrange(0, 5)
-            
-            print "Player chooses", name
-            print "Computer chooses", game.number_to_name(computerNum)
-            
-            diff = (playerNum - computerNum) % 5
-            
-            if diff == 0:
-                print "Player and computer tie!\n"
-                game.score(0,0,1)
-            elif diff <= 2:
-                print "Player wins!\n"
-                game.score(1,0,0)
-            elif diff >= 3:
-                print "Computer wins!\n"
-                game.score(0,1,0)
-        else: #print error if not acceptable
-            print "\nERROR : ", name, "is not an accepted entry.\nEntry must be rock, Spock, paper, lizard, or scissors."
-         
 if __name__ == '__main__' :
-        game = game()
         bonus = bonus()
-        bestOf = int(raw_input("Input the number of rounds you wish to play: "))
-        playerChoice = raw_input("Input your choice (rock, Spock, paper, lizard, scissors) to begin playing : ")
-        game.bestOf = bestOf
-        game.rpsls(playerChoice)
-        #remove next comment if you want to play bonusgame always after rpsls
-        #bonus.bonus_round()
- 
+        bonus.bonus_round()

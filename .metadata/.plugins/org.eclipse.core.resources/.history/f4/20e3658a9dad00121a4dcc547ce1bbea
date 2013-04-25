@@ -104,7 +104,11 @@ class bonus():
             print "Computer coins reached 20, computer won!"
         elif self.computerTot >= 20 and self.playerTot >= 20:
             print "Both players reached 20 on the same turn! How is this possible?! Go play some other game!"
-              
+            
+if __name__ == '__main__' :
+        bonus = bonus()
+        bonus.bonus_round()
+            
 class game():
     def __init__(self):
         self.playerScore = 0
@@ -181,6 +185,4 @@ if __name__ == '__main__' :
         playerChoice = raw_input("Input your choice (rock, Spock, paper, lizard, scissors) to begin playing : ")
         game.bestOf = bestOf
         game.rpsls(playerChoice)
-        #remove next comment if you want to play bonusgame always after rpsls
-        #bonus.bonus_round()
  

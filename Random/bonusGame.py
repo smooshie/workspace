@@ -17,26 +17,27 @@ class bonus():
         sides = ["heads", "tails"]
         print "Double Round: Heads or Tails!\n"
         playerSide = raw_input("Choose heads or tails : ").lower().lstrip().rstrip()
+        while playerSide not in sides:
+            playerSide = raw_input("Wrong input. Choose heads or tails : ").lower().lstrip().rstrip()
         print "Player chooses ", playerSide
         winner = choice(sides)
         print "Tossed coin: ", winner
         if playerSide == winner:
             print "Player wins, winnings doubled!"
             print "Player earns 10 coins.\n"
-            return 1
+            bonus.playerTot += 10
         else:
             print "Player loses, gains no winnings.\n"
-            return 0
     
     def correct(self, who):
         if who == "Player":
             hot = raw_input("Do you want to try to double? (y/n) ")
+            while hot != "y" and hot != "n":
+                hot = raw_input("Wrong input. Do you want to try to double? Write y for yes, n for no.")
             if hot == "y":
                 double = bonus.heads_or_tails()
-                if double == 1:
-                    bonus.playerTot += 10
-            else:
-                print "Player chose not to double"
+            elif hot == "n":
+                print "Player chose not to double."
                 bonus.playerTot += 5
               
         if who == "Computer":
@@ -60,8 +61,7 @@ class bonus():
             bonus.correct(who)
                
     def currentPoints(self):
-        print "\nAfter", self.rounds, "round :"
-        print "Player's current points: ", bonus.playerTot
+        print "\nPlayer's current points: ", bonus.playerTot
         print "Computer's current points: ", bonus.computerTot
         
     def bonus_round(self):

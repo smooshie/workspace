@@ -181,6 +181,4 @@ if __name__ == '__main__' :
         playerChoice = raw_input("Input your choice (rock, Spock, paper, lizard, scissors) to begin playing : ")
         game.bestOf = bestOf
         game.rpsls(playerChoice)
-        #remove next comment if you want to play bonusgame always after rpsls
-        #bonus.bonus_round()
  

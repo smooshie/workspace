@@ -182,5 +182,5 @@ if __name__ == '__main__' :
         game.bestOf = bestOf
         game.rpsls(playerChoice)
         #remove next comment if you want to play bonusgame always after rpsls
-        #bonus.bonus_round()
+        bonus.bonus_round()
  

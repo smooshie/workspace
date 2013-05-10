@@ -31,8 +31,8 @@ def main():
                         seq.append(i)
     
     indexes = open("indexes.txt", "w")
-    for i in range (1, 100000):
-        if i % 5000 == 0:
+    for i in range (1, len(seq)):
+        if i % 500000 == 0:
             reversd = rc(seq[i:i+5])
             indexes.write("from " + str(i) + " took " + str(seq[i:i+5]) + " --> " + str(i-20) + "-" + str(i-18) + " inserted " + reversd + " \n")
             seq.pop(i-20)

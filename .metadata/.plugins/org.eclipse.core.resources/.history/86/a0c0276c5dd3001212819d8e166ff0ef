@@ -1,0 +1,14 @@
+'''
+Created on 12.6.2013
+
+@author: lisagawr
+'''
+
+with open("testi.txt", "r") as readFile:
+    for line in readFile:
+        print line
+        line = line.rstrip("\n")
+    try:
+        part = line.split()
+    except IndexError:
+        print "argh"

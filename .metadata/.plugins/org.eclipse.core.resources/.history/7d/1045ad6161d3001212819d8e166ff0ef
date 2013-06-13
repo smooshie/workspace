@@ -1,0 +1,11 @@
+'''
+Created on 12.6.2013
+
+@author: lisagawr
+'''
+store = []
+
+with open("testi.txt", "r") as readFile:
+    for line in readFile:
+        if line == "*":
+            print "!"

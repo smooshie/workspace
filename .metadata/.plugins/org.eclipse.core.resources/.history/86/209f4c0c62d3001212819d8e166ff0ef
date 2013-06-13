@@ -1,0 +1,22 @@
+'''
+Created on 12.6.2013
+
+@author: lisagawr
+'''
+store = []
+star = False
+temp = ""
+
+with open("testia.txt", "r") as readFile:
+    for line in readFile:
+        line = line.rstrip().lstrip()
+        if line == "*" and star == False:
+            star = True
+        elif line == "*" and star == True:
+            store.append(temp)
+            temp = ""
+            star = False
+        elif star == True and line != "*":
+            temp += line
+
+print store

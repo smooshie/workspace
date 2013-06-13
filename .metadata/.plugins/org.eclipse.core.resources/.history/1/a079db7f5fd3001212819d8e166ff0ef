@@ -1,0 +1,26 @@
+'''
+Created on 12.6.2013
+
+@author: lisagawr
+'''
+store = []
+temp = ""
+old = "?"
+
+with open("testi.txt", "r") as readFile:
+    for line in readFile:
+        if line[0] == "*":
+            if old == False:
+                print "!"
+                store.append(temp)
+            temp = ""
+            temp += line.rstrip()
+            nextLine = readFile.next()
+            if nextLine[0] != "*":
+                old = True
+            else:
+                old = False
+        elif old == True:
+            temp += line.rstrip()
+
+print store

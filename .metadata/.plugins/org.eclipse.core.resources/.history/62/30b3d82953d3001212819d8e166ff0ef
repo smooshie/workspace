@@ -1,0 +1,59 @@
+from operator import itemgetter
+import glob
+import os
+
+contigs_by_mm = {}
+contigs_by_position = {}
+contigs_and_sequence = {}
+
+pathToScript = os.path.dirname(os.path.realpath(__file__))
+os.chdir(pathToScript)
+for oneFile in glob.glob("*.txt"):
+    with open(oneFile, "r") as readFile:
+        for line in readFile:
+            line = line.rstrip("\n")
+        try:
+            mm = line.split("mm ")
+            part = mm[0].split()
+            contigs_by_mm[part[0]] = int(mm[1])
+            contigs_by_position[part[0]] = str(part[5])+"-"+str(part[6])
+        except IndexError:
+            print "Error in file", oneFile
+            print "On line", line
+
+with open("all_contigs", "r") as allContigs:
+    for line in allContigs:
+        if line[0] == ">":
+            line = line.rstrip("\n")
+            name = line.split()
+            contigs_and_sequence[name[0]] = allContigs.next().rstrip("\n")
+
+seq_ref = []
+with open("chr10.fa", "r") as reference:
+    for line in reference:
+        if line[0] != ">":
+            seq_ref.append(line)
+
+sortedFile = open("sortedContigs.txt", "w")
+completeFile = open("contigs_and_placeInReference.txt", "w")
+
+for key, value in sorted(contigs_by_mm.items(), key=itemgetter(1), reverse=True):
+    print >> sortedFile, key, value
+    if key in contigs_and_sequence and value >= 2:
+        position = contigs_by_position[key]
+        sequence = contigs_and_sequence[key]
+        pos = position.split("-")
+        print >> completeFile, ">CONTIG",key
+        print >> completeFile, sequence
+        print >> completeFile, ">REFERENCE",key
+        print >> completeFile, seq_ref[int(pos[0]):int(pos[1])]
+        
+        
+sortedFile.close()
+completeFile.close()
+contigs_and_sequence = {}
+        
+#part[0] = contig name
+#part[5] = start on reference
+#part[6] = end on reference
+#part[7] = orientation  

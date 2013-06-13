@@ -1,0 +1,19 @@
+'''
+Created on 11.6.2013
+
+@author: lisagawr
+'''
+from operator import itemgetter
+
+contigs = open("contigs_414722-417122_0.txt", "r")
+all_contigs = {}
+
+for line in contigs:
+    line = line.rstrip("\n")
+    mm = line.split("mm ")
+    all_contigs[mm[0]] = mm[1]
+
+for value in sorted(all_contigs.values(), key=int):
+    for k, v in all_contigs.items():
+        if value == v:
+            print k, v

@@ -1,0 +1,12 @@
+'''
+Created on 12.6.2013
+
+@author: lisagawr
+'''
+
+with open("testingText.txt", "r") as readFile:
+    for line in readFile:
+        part = line.split()
+        print part[1]
+        
+#part[0] = contig name

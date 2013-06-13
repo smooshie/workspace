@@ -1,0 +1,27 @@
+'''
+Created on 12.6.2013
+
+@author: lisagawr
+'''
+store = []
+temp = ""
+old = True
+
+with open("testi.txt", "r") as readFile:
+    for line in readFile:
+        if line[0] == "*":
+            print "boing"
+            temp = ""
+            temp += line.rstrip()
+            nextLine = readFile.next()
+            if nextLine[0] != "*":
+                old = True
+            else:
+                old = False
+        elif old == True:
+            temp += line.rstrip()
+        elif old == False:
+            store.append(temp)
+        print temp
+        
+print store

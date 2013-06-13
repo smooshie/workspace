@@ -1,0 +1,26 @@
+'''
+Created on 11.6.2013
+
+@author: lisagawr
+'''
+from operator import itemgetter
+
+all_contigs = {}
+writeFile = open("sortedContigs.txt", "w")
+
+with open("contigs_414722-417122_0.txt", "r") as readFile:
+    for line in readFile:
+        line = line.rstrip("\n")
+        mm = line.split("mm ")
+        all_contigs[mm[0]] = int(mm[1])
+
+for key in sorted(all_contigs, key=itemgetter(1), reverse=True):
+    print all_contigs[key]
+    
+'''    for k, v in all_contigs.items():
+        if value == v:
+            print >> writeFile, k, v
+            del all_contigs[k]
+'''
+writeFile.close()
+

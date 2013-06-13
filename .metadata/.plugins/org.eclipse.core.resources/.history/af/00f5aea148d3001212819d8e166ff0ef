@@ -1,0 +1,28 @@
+'''
+Created on 11.6.2013
+
+@author: lisagawr
+'''
+
+import glob
+import os
+
+all_contigs = {}
+writeFile = open("sortedContigs.txt", "w")
+
+pathToScript = os.path.dirname(os.path.realpath(__file__))
+os.chdir(pathToScript)
+
+for oneFile in glob.glob("*.txt"):
+    with open(oneFile, "r") as readFile:
+        for line in readFile:
+            line = line.rstrip("\n")
+            mm = line.split("mm ")
+            all_contigs[mm[0]] = mm[1]
+
+for value in sorted(all_contigs.values(), key=int, reverse=True):
+    for k, v in all_contigs.items():
+        if value == v:
+            print >> writeFile, k, v
+            del all_contigs[k]
+

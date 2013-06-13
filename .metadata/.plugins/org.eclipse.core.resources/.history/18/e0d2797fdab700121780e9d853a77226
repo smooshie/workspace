@@ -1,0 +1,14 @@
+'''
+Created on 8.5.2013
+
+@author: lisagawr
+'''
+#os.path.abspath(filename)
+
+import glob
+import os
+pathToScript = os.path.dirname(os.path.realpath(__file__))
+os.chdir(pathToScript)
+for files in glob.glob("*.fa"):
+    print files
+    print "*"

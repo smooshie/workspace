@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="33" version="2.0">
+<workbench progressCount="26" version="2.0">
 <workbenchAdvisor/>
-<window height="1000" width="931" x="65" y="66">
+<window height="1129" width="1178" x="230" y="63">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -76,6 +76,15 @@
 <part id="45"/>
 <part id="46"/>
 <part id="47"/>
+<part id="48"/>
+<part id="49"/>
+<part id="50"/>
+<part id="51"/>
+<part id="52"/>
+<part id="53"/>
+<part id="54"/>
+<part id="55"/>
+<part id="56"/>
 </presentation>
 </folder>
 </info>
@@ -158,7 +167,7 @@
 </editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="RegionFinder.py" partName="RegionFinder (Work)" path="/home/lisagawr/workspace/Work/RegionFinder.py" title="RegionFinder (Work)" tooltip="Work/RegionFinder.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/RegionFinder.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="27" selectionOffset="1788" selectionTopPixel="920"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="497" selectionTopPixel="0"/>
 </editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="peaks.py" partName="peaks" path="/home/lisagawr/workspace/Work/peaks.py" title="peaks" tooltip="Work/peaks.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/peaks.py"/>
@@ -260,9 +269,9 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/rmdDup.py"/>
 <editorState selectionHorizontalPixel="0" selectionLength="1133" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="pythonClass.py" partName="pythonClass" path="/home/lisagawr/workspace/Random/pythonClass.py" title="pythonClass" tooltip="Random/pythonClass.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<editor id="org.python.pydev.editor.PythonEditor" name="pythonClass.py" partName="pythonClass" path="/home/lisagawr/workspace/Random/pythonClass.py" title="pythonClass" tooltip="Random/pythonClass.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Random/pythonClass.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7715" selectionTopPixel="2648"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7715" selectionTopPixel="2439"/>
 </editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="divide.py" partName="divide" path="/home/lisagawr/workspace/Work/divide.py" title="divide" tooltip="Work/divide.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/divide.py"/>
@@ -272,6 +281,42 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Random/bonusGame.py"/>
 <editorState selectionHorizontalPixel="0" selectionLength="5327" selectionOffset="95" selectionTopPixel="1458"/>
 </editor>
+<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="exonerateSort.py" partName="exonerateSort" path="/home/lisagawr/workspace/Work/exonerateSort.py" title="exonerateSort" tooltip="Work/exonerateSort.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/exonerateSort.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="752" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="contigs_414722-417122_1.txt" partName="contigs_414722-417122_1.txt" path="/home/lisagawr/workspace/Work/contigs_414722-417122_1.txt" title="contigs_414722-417122_1.txt" tooltip="Work/contigs_414722-417122_1.txt" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/contigs_414722-417122_1.txt"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="578" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="longContigs.py" partName="longContigs" path="/home/lisagawr/workspace/Work/longContigs.py" title="longContigs" tooltip="Work/longContigs.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/longContigs.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="290" selectionOffset="75" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="removeMasked.py" partName="removeMasked" path="/home/lisagawr/workspace/Work/removeMasked.py" title="removeMasked" tooltip="Work/removeMasked.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/removeMasked.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="1263" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="contigs_o20_a30_99744822-99746822.fa" partName="contigs_o20_a30_99744822-99746822.fa" path="/home/lisagawr/workspace/Work/contigs_o20_a30_99744822-99746822.fa" title="contigs_o20_a30_99744822-99746822.fa" tooltip="Work/contigs_o20_a30_99744822-99746822.fa" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/contigs_o20_a30_99744822-99746822.fa"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="testingText.txt" partName="testingText.txt" path="/home/lisagawr/workspace/Work/testingText.txt" title="testingText.txt" tooltip="Work/testingText.txt" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/testingText.txt"/>
+<editorState selectionHorizontalPixel="125" selectionLength="0" selectionOffset="1962" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="sortingText.py" partName="sortingText" path="/home/lisagawr/workspace/Work/sortingText.py" title="sortingText" tooltip="Work/sortingText.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Work/sortingText.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="180" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="aaa.py" partName="aaa" path="/home/lisagawr/workspace/Random/aaa.py" title="aaa" tooltip="Random/aaa.py" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Random/aaa.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="216" selectionOffset="741" selectionTopPixel="75"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="testixi.txt" partName="testixi.txt" path="/home/lisagawr/workspace/Random/testixi.txt" title="testixi.txt" tooltip="Random/testixi.txt" workbook="org.eclipse.ui.internal.EditorStack@7195bf7e">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Random/testixi.txt"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="84" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -280,7 +325,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (14 items)"/>
+<category IMemento.internal.id="Warnings (17 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="461" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -314,7 +359,7 @@
 <expanded IMemento.internal.id="/home/lisagawr/workspace/Work"/>
 <expanded IMemento.internal.id="/home/lisagawr/workspace/Work/masked.py"/>
 <expanded IMemento.internal.id="/home/lisagawr/workspace/Work/shortestSuperstring.py"/>
-<selected IMemento.internal.id="/home/lisagawr/workspace/Random/pythonClass.py"/>
+<selected IMemento.internal.id="/home/lisagawr/workspace/Random/aaa.py"/>
 </viewState>
 </view>
 </views>
@@ -428,7 +473,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@7a6b43c1" ratio="0.6680541" ratioLeft="642" ratioRight="319" relationship="4" relative="topLeft">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7a6b43c1" ratio="0.6562137" ratioLeft="565" ratioRight="296" relationship="4" relative="topLeft">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -445,7 +490,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.20819113" ratioLeft="244" ratioRight="928" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.ui.editorss" ratio="0.18283261" ratioLeft="213" ratioRight="952" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.7497303" ratioLeft="695" ratioRight="232" relationship="4" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
@@ -467,175 +512,168 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/headerRename.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/rmdDup.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Random/test.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Random/test.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/shortestSuperstring.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Work/default-contigs.fa"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/newShortestSuperstring.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/headerRename.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/masked.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Random/pythonClass.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Random/chomsky.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/charAt.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/coveragePeaks.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/coverageCompare.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/digit.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/divide.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/RegionFinder.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Random/bonusGame.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Random/pythonClass.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/exonerateSort.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Work/contigs_414722-417122_0.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Work/contigs_o20_a30_99744822-99746822.fa"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Work/contigs_414722-417122_1.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Work/testingText.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Work/sortingText.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Random/aaa.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Random/testi.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Random/testi.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Random/testia.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Random/testix.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Random/testixi.txt"/>
 </editors>
-<item historyLabel="rmdDup" index="1">
-<position info="not_deleted" x="497" y="0"/>
+<item historyLabel="exonerateSort" index="0">
+<position info="not_deleted" x="440" y="0"/>
 </item>
-<item historyLabel="headerRename" index="0">
-<position info="not_deleted" x="440" y="39"/>
-</item>
-<item historyLabel="rmdDup" index="1">
-<position info="not_deleted" x="0" y="1133"/>
-</item>
-<item historyLabel="test" index="2">
-<position info="not_deleted" x="924" y="0"/>
-</item>
-<item historyLabel="rmdDup" index="1">
-<position info="not_deleted" x="0" y="1133"/>
-</item>
-<item historyLabel="test" index="3">
-<position info="not_deleted" x="924" y="0"/>
-</item>
-<item historyLabel="rmdDup" index="1">
-<position info="not_deleted" x="511" y="23"/>
-</item>
-<item historyLabel="shortestSuperstring" index="4">
+<item historyLabel="contigs_o20_a30_99744822-99746822.fa" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="default-contigs.fa" index="5">
-<position info="not_deleted" x="2116" y="0"/>
+<item historyLabel="contigs_414722-417122_0.txt" index="1">
+<position info="not_deleted" x="586" y="0"/>
 </item>
-<item historyLabel="newShortestSuperstring" index="6">
-<position info="not_deleted" x="1742" y="0"/>
+<item historyLabel="exonerateSort" index="0">
+<position/>
 </item>
-<item historyLabel="shortestSuperstring" index="4">
-<position info="not_deleted" x="1343" y="0"/>
+<item historyLabel="contigs_414722-417122_1.txt" index="3">
+<position info="not_deleted" x="578" y="0"/>
 </item>
-<item historyLabel="newShortestSuperstring" index="6">
-<position info="not_deleted" x="1742" y="0"/>
+<item historyLabel="exonerateSort" index="0">
+<position info="not_deleted" x="345" y="0"/>
 </item>
-<item historyLabel="headerRename" index="7">
-<position info="not_deleted" x="0" y="1146"/>
+<item historyLabel="testingText.txt" index="4">
+<position info="not_deleted" x="1962" y="0"/>
 </item>
-<item historyLabel="rmdDup" index="1">
-<position info="not_deleted" x="511" y="23"/>
+<item historyLabel="exonerateSort" index="0">
+<position info="not_deleted" x="1408" y="0"/>
 </item>
-<item historyLabel="masked" index="8">
-<position info="not_deleted" x="514" y="0"/>
+<item historyLabel="testingText.txt" index="4">
+<position info="not_deleted" x="1962" y="0"/>
 </item>
-<item historyLabel="pythonClass" index="9">
-<position info="not_deleted" x="4468" y="0"/>
+<item historyLabel="sortingText" index="5">
+<position info="not_deleted" x="122" y="162"/>
 </item>
-<item historyLabel="chomsky" index="10">
-<position info="not_deleted" x="4128" y="0"/>
+<item historyLabel="testingText.txt" index="4">
+<position info="not_deleted" x="1962" y="0"/>
 </item>
-<item historyLabel="pythonClass" index="9">
-<position info="not_deleted" x="2941" y="69"/>
+<item historyLabel="exonerateSort" index="0">
+<position info="not_deleted" x="1408" y="0"/>
 </item>
-<item historyLabel="charAt" index="11">
-<position info="not_deleted" x="243" y="0"/>
+<item historyLabel="exonerateSort" index="0">
+<position/>
 </item>
-<item historyLabel="coveragePeaks" index="12">
-<position info="not_deleted" x="2682" y="0"/>
+<item historyLabel="aaa" index="6">
+<position info="not_deleted" x="958" y="0"/>
 </item>
-<item historyLabel="coverageCompare" index="13">
-<position info="not_deleted" x="465" y="0"/>
+<item historyLabel="exonerateSort" index="0">
+<position info="not_deleted" x="607" y="49"/>
 </item>
-<item historyLabel="digit" index="14">
-<position info="not_deleted" x="144" y="0"/>
+<item historyLabel="aaa" index="6">
+<position/>
 </item>
-<item historyLabel="coverageCompare" index="13">
-<position info="not_deleted" x="465" y="0"/>
-</item>
-<item historyLabel="pythonClass" index="9">
-<position info="not_deleted" x="3213" y="0"/>
-</item>
-<item historyLabel="divide" index="15">
+<item historyLabel="testi.txt" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="RegionFinder (Work)" index="16">
-<position info="not_deleted" x="3697" y="0"/>
+<item historyLabel="aaa" index="6">
+<position info="not_deleted" x="186" y="0"/>
 </item>
-<item historyLabel="pythonClass" index="9">
-<position info="not_deleted" x="3213" y="0"/>
+<item historyLabel="exonerateSort" index="0">
+<position info="not_deleted" x="2117" y="0"/>
 </item>
-<item historyLabel="digit" index="14">
-<position info="not_deleted" x="144" y="0"/>
+<item historyLabel="sortingText" index="5">
+<position info="not_deleted" x="180" y="0"/>
 </item>
-<item historyLabel="RegionFinder (Work)" index="16">
-<position info="not_deleted" x="2170" y="0"/>
+<item historyLabel="aaa" index="6">
+<position/>
 </item>
-<item historyLabel="divide" index="15">
-<position info="not_deleted" x="895" y="0"/>
+<item historyLabel="exonerateSort" index="0">
+<position info="not_deleted" x="2117" y="0"/>
 </item>
-<item historyLabel="divide" index="15">
-<position info="not_deleted" x="760" y="0"/>
+<item historyLabel="testi.txt" index="7">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="pythonClass" index="9">
-<position info="not_deleted" x="203" y="0"/>
+<item historyLabel="aaa" index="6">
+<position info="not_deleted" x="958" y="0"/>
 </item>
-<item historyLabel="RegionFinder (Work)" index="16">
-<position info="not_deleted" x="400" y="0"/>
+<item historyLabel="testi.txt" index="7">
+<position info="not_deleted" x="1137" y="0"/>
 </item>
-<item historyLabel="pythonClass" index="9">
-<position info="not_deleted" x="4468" y="0"/>
+<item historyLabel="aaa" index="6">
+<position info="not_deleted" x="206" y="0"/>
 </item>
-<item historyLabel="RegionFinder (Work)" index="16">
-<position info="not_deleted" x="1788" y="27"/>
+<item historyLabel="testi.txt" index="8">
+<position info="not_deleted" x="1523" y="0"/>
 </item>
-<item historyLabel="pythonClass" index="9">
-<position info="not_deleted" x="4210" y="0"/>
+<item historyLabel="aaa" index="6">
+<position info="not_deleted" x="206" y="0"/>
 </item>
-<item historyLabel="RegionFinder (Work)" index="16">
-<position info="not_deleted" x="1788" y="27"/>
+<item historyLabel="testi.txt" index="8">
+<position info="not_deleted" x="1523" y="0"/>
 </item>
-<item historyLabel="pythonClass" index="9">
-<position info="not_deleted" x="4210" y="0"/>
+<item historyLabel="testia.txt" index="9">
+<position info="not_deleted" x="1168" y="0"/>
 </item>
-<item historyLabel="pythonClass" index="9">
-<position info="not_deleted" x="4388" y="0"/>
+<item historyLabel="aaa" index="6">
+<position info="not_deleted" x="735" y="0"/>
 </item>
-<item historyLabel="pythonClass" index="9">
-<position info="not_deleted" x="3033" y="2687"/>
+<item historyLabel="exonerateSort" index="0">
+<position/>
 </item>
-<item historyLabel="bonusGame" index="17">
-<position info="not_deleted" x="5336" y="0"/>
+<item historyLabel="sortingText" index="5">
+<position info="not_deleted" x="180" y="0"/>
 </item>
-<item historyLabel="pythonClass" index="9">
-<position info="not_deleted" x="5738" y="73"/>
+<item historyLabel="testia.txt" index="9">
+<position info="not_deleted" x="1168" y="0"/>
 </item>
-<item historyLabel="bonusGame" index="17">
-<position info="not_deleted" x="5256" y="0"/>
+<item historyLabel="aaa" index="6">
+<position info="not_deleted" x="289" y="0"/>
 </item>
-<item historyLabel="pythonClass" index="9">
-<position info="not_deleted" x="48" y="2971"/>
+<item historyLabel="testia.txt" index="9">
+<position info="not_deleted" x="1168" y="0"/>
 </item>
-<item historyLabel="bonusGame" index="17">
-<position info="not_deleted" x="3" y="0"/>
+<item historyLabel="testix.txt" index="10">
+<position/>
 </item>
-<item historyLabel="pythonClass" index="9">
-<position info="not_deleted" x="0" y="45"/>
+<item historyLabel="aaa" index="6">
+<position info="not_deleted" x="101" y="0"/>
 </item>
-<item historyLabel="bonusGame" index="17">
-<position info="not_deleted" x="3" y="0"/>
+<item historyLabel="exonerateSort" index="0">
+<position info="not_deleted" x="3316" y="0"/>
 </item>
-<item historyLabel="bonusGame" index="17">
-<position info="not_deleted" x="4455" y="0"/>
+<item historyLabel="aaa" index="6">
+<position info="not_deleted" x="367" y="0"/>
 </item>
-<item historyLabel="bonusGame" index="17">
-<position info="not_deleted" x="4555" y="0"/>
+<item historyLabel="testix.txt" index="10">
+<position/>
 </item>
-<item active="true" historyLabel="pythonClass" index="18">
-<position info="not_deleted" x="0" y="45"/>
+<item historyLabel="aaa" index="6">
+<position info="not_deleted" x="604" y="0"/>
+</item>
+<item historyLabel="testix.txt" index="10">
+<position/>
+</item>
+<item historyLabel="testixi.txt" index="11">
+<position info="not_deleted" x="1441" y="0"/>
+</item>
+<item historyLabel="aaa" index="6">
+<position info="not_deleted" x="101" y="0"/>
+</item>
+<item historyLabel="testixi.txt" index="11">
+<position info="not_deleted" x="84" y="0"/>
+</item>
+<item historyLabel="aaa" index="6">
+<position info="not_deleted" x="48" y="687"/>
+</item>
+<item historyLabel="exonerateSort" index="0">
+<position/>
+</item>
+<item historyLabel="aaa" index="6">
+<position info="not_deleted" x="741" y="216"/>
+</item>
+<item active="true" historyLabel="exonerateSort" index="0">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -643,6 +681,9 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="topLeft"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -650,10 +691,41 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@7a6b43c1"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="testi.txt" tooltip="Random/testi.txt">
+<persistable path="/Random/testi.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="aaa.py" tooltip="Random/aaa.py">
+<persistable path="/Random/aaa.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="sortingText.py" tooltip="Work/sortingText.py">
+<persistable path="/Work/sortingText.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="testingText.txt" tooltip="Work/testingText.txt">
+<persistable path="/Work/testingText.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="contigs_o20_a30_99744822-99746822.fa" tooltip="Work/contigs_o20_a30_99744822-99746822.fa">
+<persistable path="/Work/contigs_o20_a30_99744822-99746822.fa"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="removeMasked.py" tooltip="Work/removeMasked.py">
+<persistable path="/Work/removeMasked.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="longContigs.py" tooltip="Work/longContigs.py">
+<persistable path="/Work/longContigs.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="contigs_414722-417122.txt" tooltip="Work/contigs_414722-417122.txt">
+<persistable path="/Work/contigs_414722-417122.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="contigs_o30_a30_99744822-99746822.fa" tooltip="Work/contigs_o30_a30_99744822-99746822.fa">
+<persistable path="/Work/contigs_o30_a30_99744822-99746822.fa"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="exonerateSort.py" tooltip="Work/exonerateSort.py">
+<persistable path="/Work/exonerateSort.py"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="bonusGame.py" tooltip="Random/bonusGame.py">
 <persistable path="/Random/bonusGame.py"/>
 </file>
@@ -668,36 +740,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="rmdDup.py" tooltip="Work/rmdDup.py">
 <persistable path="/Work/rmdDup.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="headerRename.py" tooltip="Work/headerRename.py">
-<persistable path="/Work/headerRename.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="chomsky.py" tooltip="Random/chomsky.py">
-<persistable path="/Random/chomsky.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="tester.txt" tooltip="Work/tester.txt">
-<persistable path="/Work/tester.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="fastqInterlace.py" tooltip="Work/fastqInterlace.py">
-<persistable path="/Work/fastqInterlace.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="equality.py" tooltip="Random/equality.py">
-<persistable path="/Random/equality.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="shortestSuperstring.py" tooltip="Work/shortestSuperstring.py">
-<persistable path="/Work/shortestSuperstring.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="digit.py" tooltip="Work/digit.py">
-<persistable path="/Work/digit.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="B_3.fas" tooltip="Work/B_3.fas">
-<persistable path="/Work/B_3.fas"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="B_1.fas" tooltip="Work/B_1.fas">
-<persistable path="/Work/B_1.fas"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="A_2.fas" tooltip="Work/A_2.fas">
-<persistable path="/Work/A_2.fas"/>
 </file>
 </mruList>
 </workbench>
